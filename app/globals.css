@@ -1,26 +1,48 @@
+@font-face {
+  font-family: "Awesome Serif";
+  src: url("/Variable%20Fonts/Awesome%20Serif%20VAR-VF.ttf") format("truetype");
+  font-weight: 100 900;
+  font-stretch: 75% 125%;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Awesome Serif";
+  src: url("/Variable%20Fonts/Awesome%20Serif%20Italic%20VAR-VF.ttf") format("truetype");
+  font-weight: 100 900;
+  font-stretch: 75% 125%;
+  font-style: italic;
+  font-display: swap;
+}
+
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --font-serif: "Awesome Serif", Georgia, "Times New Roman", serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Force standard, natural proportions for the serif typeface */
+.font-serif,
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-stretch: 100% !important;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100, "opsz" 28;
+  letter-spacing: 0.01em;
+  word-spacing: 0.08em;
+  line-height: 1.25;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-serif);
+  background-color: #f5f5f4;
+  color: #1c1917;
+  letter-spacing: 0.01em;
+  line-height: 1.65;
+}
+
+.archival-grain {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.06) 1px, transparent 0);
+  background-size: 8px 8px;
 }
