@@ -63,6 +63,6 @@ The project pairs interactive cartographic spatial nodes with forensic artifact 
 * **Data Visualization**: Native responsive SVG curves & coordinate math
 
 ---
-<p>&copy; 2026 | Researched and Designed by Rohan Lal Das</p>
+<p>&copy; 2026 | 🔍Researched and Designed by Rohan Lal Das</p>
 
 
