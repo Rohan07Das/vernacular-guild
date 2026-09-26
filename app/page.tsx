@@ -121,7 +121,7 @@ const CARTOGRAPHIC_NODES: Record<string, CartographicNode> = {
       "Ferruginous sandstone bound by iron-rich silicate cements. Magnetite and hematite inclusions create passive oxidation barriers, preventing subsurface exfoliation.",
     endangermentStatus: "High // Ground-moisture efflorescence & salt crystallization",
     image:
-      "https://vedicfeed.com/wp-content/uploads/2020/05/Somavamshi-dynasty-e1590856015173.jpg",
+      "/kalinga.jpg",
     activeSurveys: 28,
   },
   japan: {
@@ -143,7 +143,7 @@ const CARTOGRAPHIC_NODES: Record<string, CartographicNode> = {
       "Chamaecyparis obtusa (Hinoki Cypress) containing natural alpha-cadinol resins, conferring innate fungal and termite resistance spanning over 1,300 years.",
     endangermentStatus: "Stable // Active lineage of hereditary master carpenters (Miyadaiku)",
     image:
-      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1000&q=80",
+      "/jpn.jpg",
     activeSurveys: 42,
   },
   mesopotamia: {
@@ -165,7 +165,7 @@ const CARTOGRAPHIC_NODES: Record<string, CartographicNode> = {
       "Flocculated river silt high in montmorillonite clay, tempered with straw chaff and sealed with natural pitch hydrocarbons.",
     endangermentStatus: "Critical // Wind ablation & armed conflict zone fragmentation",
     image:
-      "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?auto=format&fit=crop&w=1000&q=80",
+      "/mes.jpg",
     activeSurveys: 14,
   },
   greece: {
@@ -187,7 +187,7 @@ const CARTOGRAPHIC_NODES: Record<string, CartographicNode> = {
       "Metamorphic calcitic marble with interlocking calcite crystals displaying high compressive strength and low moisture absorption (<0.1%).",
     endangermentStatus: "Vulnerable // Acid rain dissolution of high-relief fluting",
     image:
-      "https://images.unsplash.com/photo-1555993539-1732b0258235?auto=format&fit=crop&w=1000&q=80",
+      "/gre.jpg",
     activeSurveys: 33,
   },
   egypt: {
@@ -209,7 +209,7 @@ const CARTOGRAPHIC_NODES: Record<string, CartographicNode> = {
       "Nile alluvium compounded with cattle manure enzymes and wheat straw, producing porous low-thermal-conductivity walls.",
     endangermentStatus: "Endangered // Concrete replacement & river dam inundation",
     image:
-      "https://images.unsplash.com/photo-1539650116574-8efeb43e2750?auto=format&fit=crop&w=1000&q=80",
+      "egy.jpg",
     activeSurveys: 19,
   },
   andes: {
@@ -231,7 +231,7 @@ const CARTOGRAPHIC_NODES: Record<string, CartographicNode> = {
       "Porphyritic Andesite and Diorite (Mohs hardness 6.0–6.5) chiseled with hematite hammerstones and smoothed using wet quartz sands.",
     endangermentStatus: "Vulnerable // Tourist erosion & seismic displacement",
     image:
-      "https://images.unsplash.com/photo-1589802829985-817e51171b92?auto=format&fit=crop&w=1000&q=80",
+      "/and.jpg",
     activeSurveys: 21,
   },
   germany: {
@@ -253,7 +253,7 @@ const CARTOGRAPHIC_NODES: Record<string, CartographicNode> = {
       "Tertiary alloy: Lead (75%), Antimony (20%), and Tin (5%). Formulated for low melting temperature (260°C) and microscopic edge acuity.",
     endangermentStatus: "Archived // Historical foundry matrices preserved in guild vaults",
     image:
-      "https://images.unsplash.com/photo-1516962215378-7fa2e137ae93?auto=format&fit=crop&w=1000&q=80",
+      "/ger.jpg",
     activeSurveys: 37,
   },
   khmer: {
@@ -275,7 +275,7 @@ const CARTOGRAPHIC_NODES: Record<string, CartographicNode> = {
       "Glauconitic arkosic sandstone with high silicate binder ratios; subterranean laterite plinths hardened by exposure to air.",
     endangermentStatus: "High // Groundwater depletion causing subterranean sub-plinth compaction",
     image:
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/f7/54/34/caption.jpg?w=720&h=480&s=1",
+      "/khm.jpg",
     activeSurveys: 31,
   },
   mali: {
@@ -297,7 +297,7 @@ const CARTOGRAPHIC_NODES: Record<string, CartographicNode> = {
       "Alluvial clay fermented with rice husks, fish oil, and shea butter baobab extracts, providing water repellency and flexibility against desert thermal shock.",
     endangermentStatus: "Critical // Irregular precipitation patterns and modern cement patch degradation",
     image:
-      "https://images.unsplash.com/photo-1596401057633-54a8fe8ef647?auto=format&fit=crop&w=1000&q=80",
+      "/mal.jpg",
     activeSurveys: 16,
   },
   persia: {
@@ -319,7 +319,7 @@ const CARTOGRAPHIC_NODES: Record<string, CartographicNode> = {
       "High-alkali tin-opacified glazed tiles over silica clay bodies; gypsum mortar (gach) setting within 8 minutes without wooden centering frames.",
     endangermentStatus: "Moderate // Structural vibration and subsurface ground subsidence",
     image:
-      "https://media.istockphoto.com/id/1761638505/photo/si-o-se-pol-bridge-the-famous-two-storey-stone-bridge-with-33-arches-over-the-zayandeh-river.jpg?s=612x612&w=0&k=20&c=5ciDTNAWiSX6RVwa_eJVVCJoF95mKSZxoI0loy8GOxI=",
+      "/per.jpg",
     activeSurveys: 24,
   },
   maya: {
@@ -341,7 +341,7 @@ const CARTOGRAPHIC_NODES: Record<string, CartographicNode> = {
       "Karst limestone aggregate mixed with organic polyphenolic compounds derived from local tree bark, which cross-link to form an elastic waterproof biocement.",
     endangermentStatus: "High // Tropical root wedging and acid biomechanic lichen decay",
     image:
-      "https://images.unsplash.com/photo-1518638150340-f706e86654de?auto=format&fit=crop&w=1000&q=80",
+      "/may.jpg",
     activeSurveys: 22,
   },
   zimbabwe: {
@@ -363,7 +363,7 @@ const CARTOGRAPHIC_NODES: Record<string, CartographicNode> = {
       "Coarse-grained biotite granite displaying high quartz and microcline feldspar content; complete absence of chemical mortar eliminates water retention and freeze-thaw cracking.",
     endangermentStatus: "Vulnerable // Invasive ficus tree root wedging and wall tilt",
     image:
-      "https://images.unsplash.com/photo-1584646098378-0874589d76b1?auto=format&fit=crop&w=1000&q=80",
+      "/zim.jpg",
     activeSurveys: 17,
   },
 };
@@ -379,7 +379,7 @@ const INITIAL_DISPATCHES: Dispatch[] = [
     excerpt:
       "The specific high-iron clay composition and slow-cooling process haven't altered since the 11th century temple plinths.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/1/11/Beauty_of_LingrajTemple.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original",
+      "/clay.jpg",
     tags: ["Terracotta", "Stone Carving"],
   },
   {
@@ -405,7 +405,7 @@ const INITIAL_DISPATCHES: Dispatch[] = [
     excerpt:
       "Erosion along the base reliefs reveals hidden interlocking stone tongue-and-groove joints without mortar.",
     image:
-      "https://images.unsplash.com/photo-1590766940554-634a7ed41450?auto=format&fit=crop&w=900&q=80",
+      "/gate.jpg",
     tags: ["Architecture", "Heritage"],
   },
 ];
@@ -413,601 +413,593 @@ const INITIAL_DISPATCHES: Dispatch[] = [
 const ARTIFACT_GALLERY: ArchivalArtifact[] = [
   {
     id: "ART-01",
-    title: "Torana Arch Keystone",
-    period: "c. 980 CE",
-    medium: "Chiseled Sandstone",
+    title: "Torana Pillars, Sun Temple",
+    period: "c. 1026–1027 CE",
+    medium: "Carved Golden Solanki Sandstone",
     plateNumber: "PL-091",
     image:
-      "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=800&q=80",
+      "/suntemple.jpg",
     notes:
-      "Features ornamental scrollwork depicting aquatic makara motifs along the primary load-bearing arch.",
+      "Surviving twin monolithic archway pillars leading to the Sabha Mandapa at the Modhera Sun Temple complex.",
     verification: {
-      assayMethod: "X-Ray Powder Diffraction (XRD) & Optical Luminescence",
-      datingConfidence: "980 CE (±28 yrs) // 99.1% Confidence",
+      assayMethod: "Epigraphic Date Matching & Maru-Gurjara Comparative Stylometry",
+      datingConfidence: "VS 1083 (1026–27 CE) // Inscription-Verified",
       spectroscopyResults:
-        "Quartz Silt (71.2%), Hematite Binder (16.4%), Trace Feldspar (4.1%)",
+        "Calcareous quartz arenite sandstone; stylistic alignment with Adinatha Temple at Dilwara (dated 1031 CE)",
       chainOfCustody:
-        "Field excavation register 1898 -> Central Museum vault -> Guild Registry 2026",
+        "Chaulukya Royal Endowment (Bhima I) -> Sacking by Delhi Sultanate (13th c.) -> ASI Conservation Register",
       verificationHash:
-        "SHA256: 4a9f931d8e6a12b4e899238cf7802a4b08d7e930129bc",
-      leadExaminer: "Dr. K. Patnaik, FSA",
-      institution: "Civic Lithic Conservation Bureau",
+        "EPIGRAPHY: VS-1083-BHIMA-I-SOLANKI-MODHERA-WEST-WALL",
+      leadExaminer: "Archaeological Survey of India (Vadodara Circle)",
+      institution: "Temple Architecture & Epigraphy Branch",
       status: "AUTHENTICATED",
     },
     timeline: [
       {
-        year: "980 CE",
-        numericYear: 980,
-        event: "Initial Carving & Dedication",
+        year: "1026 CE",
+        numericYear: 1026,
+        event: "Inscribed Foundation under Bhima I",
         conditionIndex: 100,
         detail:
-          "Quarried from regional ferruginous sandstone beds and dedicated under royal patronage.",
+          "Erected under Chaulukya patronage; commemorated by an inverted dedicatory stone block reading 'Vikram Samvat 1083'.",
       },
       {
-        year: "1145 CE",
-        numericYear: 1145,
-        event: "Temple Mandapa Expansion",
-        conditionIndex: 94,
+        year: "1031 CE",
+        numericYear: 1031,
+        event: "Maru-Gurjara Stylistic Parallels",
+        conditionIndex: 96,
         detail:
-          "Secondary arch added above keystone; minor compression fractures recorded on rear joint.",
+          "Architectural fluting and figural cusping completed, mirroring contemporary work at the Adinatha Jain Temple at Dilwara.",
       },
       {
-        year: "1420 CE",
-        numericYear: 1420,
-        event: "Monsoon Silt Infiltration",
-        conditionIndex: 82,
+        year: "c. 1299 CE",
+        numericYear: 1299,
+        event: "Delhi Sultanate Campaign",
+        conditionIndex: 58,
         detail:
-          "Flooding submerged the base plinth, causing early spalling along the low-relief carvings.",
+          "Forces under Alauddin Khilji damaged the superstructure shikhara and collapsed the upper transverse arch of the grand torana.",
       },
       {
-        year: "1688 CE",
-        numericYear: 1688,
-        event: "Seismic Ground Displacement",
-        conditionIndex: 71,
+        year: "1889 CE",
+        numericYear: 1889,
+        event: "Colonial Lithic Documentation",
+        conditionIndex: 50,
         detail:
-          "Regional tectonic tremor opened an 8mm lateral gap between central interlocking voussoirs.",
+          "Surveys record only the two freestanding pillars surviving of the torana that originally fronted the Sabha Mandapa.",
       },
       {
-        year: "1898 CE",
-        numericYear: 1898,
-        event: "Colonial Archeological Survey",
-        conditionIndex: 65,
+        year: "1960 CE",
+        numericYear: 1960,
+        event: "Dry-Stone Plinth Grouting",
+        conditionIndex: 72,
         detail:
-          "British surveyors bound loose keystone joints using early zinc-plate braces and iron pins.",
-      },
-      {
-        year: "1974 CE",
-        numericYear: 1974,
-        event: "Mortarless Stabilization",
-        conditionIndex: 80,
-        detail:
-          "Zinc braces removed; chemical poultice washes extracted ingrained atmospheric sulfites.",
+          "Foundations stabilized against seasonal subsidence near the Pushpavati river basin.",
       },
       {
         year: "2026 CE",
         numericYear: 2026,
-        event: "Photogrammetry & Guild Indexing",
-        conditionIndex: 78,
+        event: "Guild Photogrammetric Survey",
+        conditionIndex: 75,
         detail:
-          "Sub-millimeter lidar scan uploaded to public decentralized archive registry.",
+          "Detailed Maru-Gurjara pillar bracket matrices and kirtimukha friezes cataloged in the open register.",
       },
     ],
   },
   {
     id: "ART-02",
-    title: "Wooden Foundry Movable Type",
-    period: "c. 1912",
-    medium: "Oiled Teakwood",
+    title: "Bengali Movable Metal & Wood Type",
+    period: "c. 1778–1800 CE",
+    medium: "Steel Punches, Copper Matrices & Lead Type Alloy",
     plateNumber: "PL-092",
     image:
-      "https://images.unsplash.com/photo-1516962215378-7fa2e137ae93?auto=format&fit=crop&w=800&q=80",
+      "/bengal.jpg",
     notes:
-      "Extracted from a regional printing guild vault. Shows hand-carved vernacular ligatures.",
+      "Early vernacular movable typeface punch-cut by Panchanan Karmakar under Charles Wilkins.",
     verification: {
-      assayMethod: "Dendrochronological Core Growth Ring Analysis",
-      datingConfidence: "Felled Winter 1909–1911 // 98.4% Confidence",
+      assayMethod: "Typographic Imprint Collation & Punch-Cutter Lineage Audit",
+      datingConfidence: "1778–1800 CE // Verified First Edition Imprints",
       spectroscopyResults:
-        "Tectona grandis (Teak), Oxidized Linseed Residue, Carbon Black Pigment",
+        "Type metal expansion alloy (Pb-Sb-Sn) cast in hand moulds; wooden components in seasoned native hardwood",
       chainOfCustody:
-        "Provincial Press Treasury -> Underground Press Vault (1942) -> Guild 2026",
+        "Wilkins Workshop (Hooghly) -> Karmakar Lineage -> Serampore Mission Press (1800) -> Historical Archives",
       verificationHash:
-        "SHA256: 7bc902fa11904bc38e09f8721c0b34598a3421ec88910",
-      leadExaminer: "M. Bhattacharya, Archival Type Master",
-      institution: "Ephemera & Press Preservation Trust",
+        "IMPRINT: HALHED-GRAMMAR-1778-SERAMPORE-MISSION-1800",
+      leadExaminer: "Archival Printing & Typography Historians",
+      institution: "Bengal Typographic Heritage Research Collective",
       status: "AUTHENTICATED",
     },
     timeline: [
       {
-        year: "1912",
-        numericYear: 1912,
-        event: "Hand Cutting of Typeface",
-        conditionIndex: 98,
+        year: "1778",
+        numericYear: 1778,
+        event: "First Bengali Movable Type Cast",
+        conditionIndex: 100,
         detail:
-          "Carved out of seasoned Burma teak to withstand thousands of hand-press ink impressions.",
+          "Charles Wilkins and apprentice Panchanan Karmakar cut steel punches to print Halhed's 'A Grammar of the Bengal Language'.",
       },
       {
-        year: "1928",
-        numericYear: 1928,
-        event: "High-Volume Gazette Run",
-        conditionIndex: 90,
+        year: "1800",
+        numericYear: 1800,
+        event: "Serampore Mission Press Founded",
+        conditionIndex: 96,
         detail:
-          "Daily vernacular journal production produced edge wear on vowel mark ligatures.",
+          "Press began operating with a wooden hand-press bought in Calcutta for £40; Karmakar established the native type foundry.",
       },
       {
-        year: "1942",
-        numericYear: 1942,
-        event: "Underground Resistance Bulletins",
-        conditionIndex: 79,
+        year: "1812",
+        numericYear: 1812,
+        event: "Serampore Printing House Fire",
+        conditionIndex: 68,
         detail:
-          "Hidden in rural damp earth during colonial search and seizure raids.",
+          "Fire destroyed hundreds of reams of paper and multiple manuscripts, but Karmakar's steel punch matrices were salvaged.",
       },
       {
-        year: "1968",
-        numericYear: 1968,
-        event: "Linseed Bath Sealing",
-        conditionIndex: 64,
+        year: "1835",
+        numericYear: 1835,
+        event: "Over 200,000 Vernacular Volumes Printed",
+        conditionIndex: 82,
         detail:
-          "Immersed in heated linseed oil drums upon commercial adoption of hot metal monotype.",
+          "Foundry completed founts across 40+ scripts including Marathi (1808), Punjabi (1812), Telugu (1814), and Kannada (1817).",
       },
       {
-        year: "1994",
-        numericYear: 1994,
-        event: "Entomological Remediation",
-        conditionIndex: 70,
+        year: "1910",
+        numericYear: 1910,
+        event: "Monotype Mechanical Transition",
+        conditionIndex: 75,
         detail:
-          "Anoxic nitrogen chamber treatment arrested early teakwood borer beetle tunneling.",
+          "Original hand-cast Karmakar matrices conserved as historical artefacts upon adoption of mechanized hot-metal casters.",
       },
       {
         year: "2026 CE",
         numericYear: 2026,
-        event: "Vector Font Standardization",
-        conditionIndex: 73,
+        event: "Digital Ligature Vectorization",
+        conditionIndex: 88,
         detail:
-          "Individual woodblocks scanned at 4800 DPI to preserve glyph kerning and ligatures.",
+          "Rare surviving printed impressions digitized to reconstruct authentic vernacular kerning profiles.",
       },
     ],
   },
   {
     id: "ART-03",
-    title: "Terracotta Relief Plaque",
-    period: "c. 1640 CE",
-    medium: "Kiln-Fired Silt",
+    title: "Terracotta Relief Architectural Plaque",
+    period: "c. 1626–1656 CE",
+    medium: "Alluvial Clay & Low-Fire Kiln Brick",
     plateNumber: "PL-093",
     image:
-      "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=800&q=80",
+      "/bisnupur.jpg",
     notes:
-      "Depicts everyday vernacular trade along coastal estuary settlements.",
+      "Carved and fired architectural facade tile from the Malla royal temple enclave at Bishnupur.",
     verification: {
-      assayMethod: "Thermoluminescence (TL) Mineral Dating",
-      datingConfidence: "1638 CE (±34 yrs) // 97.9% Confidence",
+      assayMethod: "Malla Dynastic Architectural Stratigraphy & Petrography",
+      datingConfidence: "Reign of King Raghunath Singha (r. 1626–1656 CE)",
       spectroscopyResults:
-        "Fe₂O₃ (14.2%), Al₂O₃ (22.8%), SiO₂ (54.1%), Zero Synthetic Additives",
+        "High-iron Gangetic alluvium tempered with fine quartz sand silt; fired under oxidizing atmospheric kiln conditions",
       chainOfCustody:
-        "Riverine Temple Plinth -> Local Council Vault -> Guild Ledger 2026",
+        "Malla Dynasty Royal Workshops -> Bishnupur Temple Precincts -> UNESCO Tentative List (1997)",
       verificationHash:
-        "SHA256: e8812c44309aef8821049bc7881023d8702391bce9812",
-      leadExaminer: "Dr. Ananya Ray, Ceramic Petrographer",
-      institution: "Estuary Cultural Guild Archeometry Lab",
+        "MALLABHUM: RAGHUNATH-I-BISHNUPUR-TERRACOTTA-REGISTER",
+      leadExaminer: "Dr. Ananya Ray, Regional Epigraphy Specialist",
+      institution: "Bengal Vernacular Architecture Survey",
       status: "AUTHENTICATED",
     },
     timeline: [
       {
-        year: "1640 CE",
-        numericYear: 1640,
-        event: "Pit Kiln Vitrification",
-        conditionIndex: 96,
+        year: "1626 CE",
+        numericYear: 1626,
+        event: "Malla Temple Building Surge",
+        conditionIndex: 100,
         detail:
-          "Baked with rice husk and tamarind coals to produce distinctive ferrous slip coloration.",
+          "Lacking local quarry stone, Malla ruler Raghunath Singha commissioned alluvial brick temples with ornate terracotta facades.",
       },
       {
-        year: "1722 CE",
-        numericYear: 1722,
-        event: "Temple Wall Setting",
-        conditionIndex: 91,
+        year: "1655 CE",
+        numericYear: 1655,
+        event: "Jor Bangla & Shyamrai Installations",
+        conditionIndex: 95,
         detail:
-          "Set into slaked lime binder along the north circumambulatory exterior corridor.",
+          "Intricate relief plaques depicting Ramayana battles and vernacular rural trades fixed into slaked lime-surkhi mortars.",
       },
       {
-        year: "1810 CE",
-        numericYear: 1810,
-        event: "Saline Ground Exposure",
+        year: "1742 CE",
+        numericYear: 1742,
+        event: "Bargi Incursions of Maratha Horsemen",
         conditionIndex: 78,
         detail:
-          "Estuary tidal surges deposited halite crystals, triggering micro-spalling on perimeter relief.",
+          "Repeated raids across Mallabhum caused neglect and peripheral spalling of vulnerable unglazed low-relief plaques.",
       },
       {
-        year: "1931 CE",
-        numericYear: 1931,
-        event: "Structural Delamination",
-        conditionIndex: 56,
+        year: "1974 CE",
+        numericYear: 1974,
+        event: "Structural Desalination & Chemical Consolidation",
+        conditionIndex: 70,
         detail:
-          "Thermal expansion cycles caused horizontal hairline fracture across primary boat rowers.",
+          "Conservation applications removed vegetation rootlets and extracted soluble rainwater salts from porous baked clays.",
       },
       {
-        year: "1988 CE",
-        numericYear: 1988,
-        event: "Desalination Soak",
-        conditionIndex: 74,
+        year: "1997 CE",
+        numericYear: 1997,
+        event: "UNESCO World Heritage Tentative Listing",
+        conditionIndex: 76,
         detail:
-          "Deionized water bath cycles extracted 94% of accumulated soluble chloride salts.",
+          "Bishnupur temple group officially inscribed on the tentative list for distinctive Bengal chala terracotta craftsmanship.",
       },
       {
         year: "2026 CE",
         numericYear: 2026,
-        event: "Silicate Consolidant Infusion",
-        conditionIndex: 76,
+        event: "Guild Micro-Fissure Surface Profiling",
+        conditionIndex: 74,
         detail:
-          "Ethyl silicate consolidant injected into micro-fissures under vacuum hood.",
+          "High-resolution laser depth mapping of low-fire tile compositions to track humidity-induced spalling.",
       },
     ],
   },
   {
     id: "ART-04",
-    title: "Vernacular Postmark Ledger",
-    period: "c. 1934",
-    medium: "Cotton Rag & Ink",
+    title: "Scinde Dawk & 1854 Half-Anna Stamp",
+    period: "1852–1854 CE",
+    medium: "Embossed Sealing Wax & Lithographed Rag Paper",
     plateNumber: "PL-094",
     image:
-      "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=800&q=80",
+      "stamp.jpg",
     notes:
-      "Shows cancelled hand-carved rubber stamps and wax seal receipts from provincial transit nodes.",
+      "First postal prepayment issues of the Subcontinent: circular embossed Scinde Dawk and Calcutta-lithographed Victoria issue.",
     verification: {
-      assayMethod: "Spectrophotometric Ink & Fiber Microscopy",
-      datingConfidence: "1934 Postmark Verified // 100% Provenance",
+      assayMethod: "Philatelic Plate Flaw Analysis & Rag Fiber Microscopy",
+      datingConfidence: "October 1, 1854 Issue // 100% Archival Provenance",
       spectroscopyResults:
-        "Cotton Cellulose (94%), Shellac Wax, Aniline Dye Cancel Stamps",
+        "Handmade pure rag paper without watermarks, blue printer's ink, gumless and imperforate issue sheets",
       chainOfCustody:
-        "District Post Office Trunk -> Retired Postmaster Heirloom -> Guild Archive",
+        "Survey of India (Calcutta) -> General Post Office Depository -> National Postal Collection",
       verificationHash:
-        "SHA256: 3c9902a7812bc880491fedbc667104982a0b457812903",
+        "POSTAL-ACT: 1854-SCINDE-DAWK-CALCUTTA-SURVEY-LITHO",
       leadExaminer: "S. Sengupta, Philatelic Forensicist",
-      institution: "Postal Ephemera Research Circle",
+      institution: "Subcontinental Postal Ephemera Archive",
       status: "AUTHENTICATED",
     },
     timeline: [
       {
-        year: "1934",
-        numericYear: 1934,
-        event: "Provincial Postal Opening",
+        year: "1852",
+        numericYear: 1852,
+        event: "Scinde District Dawk Inaugurated",
         conditionIndex: 100,
         detail:
-          "Logged first mailbag transit across river ferries; ink stamps pristine.",
+          "Sir Bartle Frere introduced circular embossed sealing-wax wafer stamps in Sindh—the earliest prepayment adhesive stamps in Asia.",
       },
       {
-        year: "1948",
-        numericYear: 1948,
-        event: "Post-War Reclassification",
-        conditionIndex: 89,
+        year: "1854",
+        numericYear: 1854,
+        event: "All-India Uniform Postal Act & Issue",
+        conditionIndex: 96,
         detail:
-          "Transferred to regional government depository; page corners show minor handling folds.",
+          "First all-India postage stamps issued on Oct 1; 1/2-anna Victoria profile lithographed by the Survey of India in Calcutta.",
       },
       {
-        year: "1962",
-        numericYear: 1962,
-        event: "Monsoon Moisture Bloom",
-        conditionIndex: 72,
+        year: "1854",
+        numericYear: 1854,
+        event: "Railway Mail Service Established",
+        conditionIndex: 92,
         detail:
-          "Damp warehouse storage caused foxing and localized iron-gall ink bleed on pages 40–48.",
+          "Mail transport shifted from foot runners to dedicated railway mail coaches across newly constructed trunk lines.",
       },
       {
-        year: "1985",
-        numericYear: 1985,
-        event: "Silverfish & Insect Attack",
-        conditionIndex: 61,
+        year: "1870",
+        numericYear: 1870,
+        event: "Deacidification of Early Impressions",
+        conditionIndex: 82,
         detail:
-          "Starch paste binding consumed by silverfish, detaching spine signatures.",
+          "Extant proof sheets placed in dry archival folios to prevent humidity bleed of early oil-based lithographic inks.",
       },
       {
-        year: "2010",
-        numericYear: 2010,
-        event: "Japanese Tissue Mending",
-        conditionIndex: 79,
+        year: "1937",
+        numericYear: 1937,
+        event: "Philatelic Rarity Classification",
+        conditionIndex: 80,
         detail:
-          "Kizukishi Kozo paper strips reinforced tears using wheat starch adhesive.",
+          "Scarce imperforate 1854 sheets and intact red-wax Scinde Dawks cataloged in imperial and museum collections.",
       },
       {
         year: "2026 CE",
         numericYear: 2026,
-        event: "Deacidification & Ingestion",
-        conditionIndex: 83,
+        event: "Digital Multispectral Scan",
+        conditionIndex: 85,
         detail:
-          "Non-aqueous magnesium oxide buffer spray stabilized cellulose fiber pH to 7.8.",
+          "High-DPI spectral microscopy captures hand-cut lithographic stone transfers and paper fiber watermarking.",
       },
     ],
   },
   {
     id: "ART-05",
-    title: "Perforated Sandstone Jali",
-    period: "c. 1580 CE",
-    medium: "Red Sandstone",
+    title: "Perforated Marble Jali, Tomb of Salim Chishti",
+    period: "c. 1571–1607 CE",
+    medium: "Carved Makrana White Marble",
     plateNumber: "PL-095",
     image:
-      "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=800&q=80",
+      "salim.jpg",
     notes:
-      "Geometric airflow lattice engineered to accelerate ambient cross-ventilation in arid seasons.",
+      "Masterwork pierced marble fretwork screens installed on the circumambulatory verandah at Fatehpur Sikri.",
     verification: {
-      assayMethod: "Non-Destructive Ultrasonic Velocity Testing (UPV)",
-      datingConfidence: "1580 CE (±40 yrs) // Structural Integrity Validated",
+      assayMethod: "Mughal Architectural Ledger & Gujarati Stonecraft Stylometry",
+      datingConfidence: "Tomb built 1571–80 (Akbar); Marble Screens added 1605–07 (Jahangir)",
       spectroscopyResults:
-        "Ferruginous Quartz Arenite, Sub-angular Grains, Silica Cementation",
+        "High-purity metamorphic calcitic Makrana marble; intricate geometric star polygons and auspicious swastika motifs",
       chainOfCustody:
-        "Fort Pavilion Wall -> Monument Registry (1922) -> Guild 2026",
+        "Imperial Mughal Workshops (Gujarati Guild Masons) -> Chishti Sufi Dargah -> ASI Monument Protection",
       verificationHash:
-        "SHA256: f0182ba9c87410293ebca67120489bca7820129bcfe18",
-      leadExaminer: "Eng. R. K. Nayak, Structural Archeologist",
-      institution: "Heritage Engineering Taskforce",
+        "FATEHPUR-SIKRI: SALIM-CHISHTI-MAKRANA-JALI-1607",
+      leadExaminer: "Prof. T. Mohanty, Architectural Stone Specialist",
+      institution: "Mughal Lapidary Heritage Commission",
       status: "AUTHENTICATED",
     },
     timeline: [
       {
         year: "1580 CE",
         numericYear: 1580,
-        event: "Geometric Chisel Piercing",
+        event: "Original Mausoleum Dedicated",
+        conditionIndex: 100,
+        detail:
+          "Akbar completed the core red sandstone tomb for Sufi saint Sheikh Salim Chishti inside the Fatehpur Sikri congregational courtyard.",
+      },
+      {
+        year: "1607 CE",
+        numericYear: 1607,
+        event: "Installation of Pierced Marble Screens",
         conditionIndex: 98,
         detail:
-          "Monolithic slab pierced with 120 interlocking octagonal perforations.",
+          "Under Jahangir, the tomb was clad in white marble, and master Gujarati craftsmen carved pierced jali screens with interlocking floral lattices.",
       },
       {
-        year: "1704 CE",
-        numericYear: 1704,
-        event: "Windward Sandblasting",
-        conditionIndex: 88,
+        year: "1720 CE",
+        numericYear: 1720,
+        event: "Climatic Dust & Monsoon Cycles",
+        conditionIndex: 90,
         detail:
-          "Decades of desert dust storms softened external sharp relief edges.",
+          "Decades of blowing sand from the Thar desert margins softened the thinnest fretwork edges without structural breakage.",
       },
       {
-        year: "1857 CE",
-        numericYear: 1857,
-        event: "Siege Shockwave Fracture",
-        conditionIndex: 68,
+        year: "1924 CE",
+        numericYear: 1924,
+        event: "Colonial Marble Grouting",
+        conditionIndex: 85,
         detail:
-          "Concussive blast created diagonal shear fissure through lower four rows.",
+          "Loose framing stanchions along the south verandah secured using slaked lime mortar and copper dowels.",
       },
       {
-        year: "1940 CE",
-        numericYear: 1940,
-        event: "Ferrous Cramp Rust Expansion",
-        conditionIndex: 59,
+        year: "1999 CE",
+        numericYear: 1999,
+        event: "Clay Pack Desoiling Treatment",
+        conditionIndex: 90,
         detail:
-          "Colonial iron repair pins oxidized and expanded, causing stone cracking.",
-      },
-      {
-        year: "1998 CE",
-        numericYear: 1998,
-        event: "Titanium Dowel Replacement",
-        conditionIndex: 75,
-        detail:
-          "Corroded iron cramps replaced with inert titanium rods and lime grout.",
+          "Fullani/attapulgite clay poultice applications safely extracted atmospheric airborne grime and oil residues from the porous marble filigree.",
       },
       {
         year: "2026 CE",
         numericYear: 2026,
-        event: "Ultrasonic Pulse Validation",
-        conditionIndex: 77,
+        event: "Guild Airflow & Solar Shadow Metrology",
+        conditionIndex: 89,
         detail:
-          "Acoustic pulse sensors indicate uniform compressive load path.",
+          "Computational fluid dynamics validation of ventilation acceleration through the geometric lattice perforations.",
       },
     ],
   },
   {
     id: "ART-06",
-    title: "Monolithic Pillar Fluting",
-    period: "c. 1020 CE",
-    medium: "Carved Granulite",
+    title: "Monolithic Forge-Welded Iron Pillar",
+    period: "c. 375–415 CE",
+    medium: "Forge-Welded Wrought Iron (Low Carbon, High Phosphorus)",
     plateNumber: "PL-096",
     image:
-      "https://www.worldhistory.org/img/r/p/1500x1500/1101.jpg.webp?v=1721079843",
+      "/pillar.jpg",
     notes:
-      "Fluted column base exhibiting microscopic chisel striations consistent with hardened iron points.",
+      "7.21-meter, 6-tonne monolithic wrought iron pillar erected under Chandragupta II (Vikramaditya), noted for exceptional corrosion resistance.",
     verification: {
-      assayMethod: "Laser Confocal Chisel Wear Metrology",
-      datingConfidence: "Early 11th Century // 96.5% Mineral Match",
+      assayMethod: "Brahmi Epigraphy & Metallographic Passive Film Analysis",
+      datingConfidence: "Late 4th / Early 5th Century CE // Reign of Chandragupta II",
       spectroscopyResults:
-        "Granulite Facies Metamorphic Rock (Garnet-Sillimanite-Gneiss Complex)",
+        "High-purity wrought iron (>99% Fe), low sulfur, absent manganese, high phosphorus (~0.28%); protective misawite (iron hydrogen phosphate hydrate) film",
       chainOfCustody:
-        "Temple Mandapa Ruin -> In-Situ Preservation Zone -> Guild Telemetry 2026",
+        "Vishnupadagiri (Udayagiri/Vidisha) -> Relocated by Anangpal Tomar (11th c.) -> Qutb Complex, Mehrauli",
       verificationHash:
-        "SHA256: d90184b238ef10924cba89710389ebca5610293847ab1",
-      leadExaminer: "Prof. T. Mohanty",
-      institution: "State Geochronology Research Institute",
+        "GUPTA-EPIGRAPHY: CHANDRA-VISHNUPADA-MEHRAULI-PILLAR",
+      leadExaminer: "Dr. H. Jena, Archeometallurgist",
+      institution: "National Metallurgical Heritage Laboratory",
       status: "AUTHENTICATED",
     },
     timeline: [
       {
-        year: "1020 CE",
-        numericYear: 1020,
-        event: "Monolithic Lathe Turning",
+        year: "400 CE",
+        numericYear: 400,
+        event: "Erection as Garuda-Dhvaja",
+        conditionIndex: 100,
+        detail:
+          "Forged by hammer-welding hot lumps of iron; inscribed with 6 lines of pure Sanskrit verse celebrating King Chandra (Chandragupta II).",
+      },
+      {
+        year: "1052 CE",
+        numericYear: 1052,
+        event: "Relocation by Tomar Dynasty",
         conditionIndex: 97,
         detail:
-          "Single block smoothed with abrasive emery powders and river stone rollers.",
+          "Rajput king Anangpal Tomar moved the 6-tonne pillar to Lal Kot (Mehrauli, Delhi), commemorated by a later Devanagari inscription.",
       },
       {
-        year: "1350 CE",
-        numericYear: 1350,
-        event: "Superstructure Collapse",
-        conditionIndex: 82,
+        year: "1192 CE",
+        numericYear: 1192,
+        event: "Incorporation into Qutb Precinct",
+        conditionIndex: 94,
         detail:
-          "Collapse of masonry ceiling dumped sandstone beams on pillar capital.",
+          "Pillar remained standing in the inner courtyard during the construction of the Quwwat-ul-Islam mosque without being toppled.",
       },
       {
-        year: "1680 CE",
-        numericYear: 1680,
-        event: "Foundation Tilting",
-        conditionIndex: 69,
+        year: "1739 CE",
+        numericYear: 1739,
+        event: "Cannonball Impact Mark",
+        conditionIndex: 90,
         detail:
-          "Differential soil subsidence skewed pillar 1.8° off vertical axis.",
+          "Close-range cannonball strike fired during an eighteenth-century siege caused a surface indentation but failed to shatter the ductile metal.",
       },
       {
-        year: "1910 CE",
-        numericYear: 1910,
-        event: "Archaeological Excavation",
-        conditionIndex: 64,
+        year: "1997 CE",
+        numericYear: 1997,
+        event: "Protective Fence Installation",
+        conditionIndex: 92,
         detail:
-          "Buried under 2 meters of river silt; vegetation root systems cleared.",
-      },
-      {
-        year: "1982 CE",
-        numericYear: 1982,
-        event: "Hydraulic Jack Re-leveling",
-        conditionIndex: 78,
-        detail:
-          "Sub-base plinth reinforced with micro-piles to halt foundation roll.",
+          "Protective barrier erected to halt skin-oil abrasion from tourists leaning against the lower trunk.",
       },
       {
         year: "2026 CE",
         numericYear: 2026,
-        event: "Strain Gauge Telemetry",
-        conditionIndex: 80,
+        event: "Guild Corrosion-Layer Telemetry",
+        conditionIndex: 92,
         detail:
-          "Continuous optical strain telemetry monitors micro-settlement.",
+          "Spectroscopic sensors monitor the sub-millimeter passive crystalline phosphate layer preventing atmospheric oxidation.",
       },
     ],
   },
   {
     id: "ART-07",
-    title: "Hand-Bound Court Chronicle",
-    period: "c. 1876",
-    medium: "Marbled Binding & Vellum",
+    title: "Akbarnama Illustrated Imperial Chronicle",
+    period: "c. 1590–1597 CE",
+    medium: "Opaque Watercolor & Gold Leaf on Burnished Paper",
     plateNumber: "PL-097",
     image:
-      "https://images.unsplash.com/photo-1461360370896-922624d12aa1?auto=format&fit=crop&w=800&q=80",
+      "print.jpg",
     notes:
-      "Hand-inked bilingual land boundary arbitration records preserved with pine-resin sealant.",
+      "Official court history of Akbar composed in Persian by Abu'l-Fazl and illuminated by royal karkhana atelier masters.",
     verification: {
-      assayMethod: "FTIR Spectroscopy & Multispectral Fluorescence",
-      datingConfidence: "Circa 1876 Certified // Document Seal Cross-Referenced",
+      assayMethod: "Persian Imperial Codicology & Pigment Micro-Spectroscopy",
+      datingConfidence: "Composed 1590–1597 CE; Illustrated c. 1592–1594 CE",
       spectroscopyResults:
-        "Oak Gall Acid, Gum Arabic, Rag Paper Sizing (Animal Gelatin)",
+        "Lapis lazuli ultramarine, cinnabar vermilion, orpiment, malachite, shell gold on hemp-linen paper with burnished sizing",
       chainOfCustody:
-        "Feudatory Court Record Room -> District Archive -> Guild Scan Project 2026",
+        "Imperial Mughal Library -> Jahangir / Shah Jahan Seals -> Court of Oudh -> Victoria and Albert Museum (1896)",
       verificationHash:
-        "SHA256: a177289b4c09238471bce68201948bcaf782910384729",
+        "MUGHAL-CHRONICLE: ABUL-FAZL-AKBARNAMA-VA-1896",
       leadExaminer: "R. Lal Das, Conservator",
-      institution: "Civic Paleography Guild",
+      institution: "Mughal Manuscript & Miniature Institute",
       status: "AUTHENTICATED",
     },
     timeline: [
       {
-        year: "1876",
-        numericYear: 1876,
-        event: "Court Inscription",
+        year: "1590 CE",
+        numericYear: 1590,
+        event: "Imperial Commission by Akbar",
+        conditionIndex: 100,
+        detail:
+          "Akbar ordered vizier Abu'l-Fazl to write the detailed history of his reign, drawing upon state secretarial archives and oral memoirs.",
+      },
+      {
+        year: "1594 CE",
+        numericYear: 1594,
+        event: "Atelier Painting Execution",
         conditionIndex: 98,
         detail:
-          "Scribe executed boundaries using lampblack and gall inks on English rag paper.",
+          "Over 49 master court artists (including Basawan, Lal, and Miskin) executed 116 dynamic illustrated double-page compositions.",
       },
       {
-        year: "1905",
-        numericYear: 1905,
-        event: "Marbled Paper Rebound",
-        conditionIndex: 91,
+        year: "1605 CE",
+        numericYear: 1605,
+        event: "Accession to Imperial Library",
+        conditionIndex: 95,
         detail:
-          "Comb-pattern marbled paper covers fitted to protect inner legal leaves.",
+          "Entered Jahangir's personal collection upon Akbar's death, marked with official imperial inspection seals and flyleaf endorsements.",
       },
       {
-        year: "1947",
-        numericYear: 1947,
-        event: "Trunk Transfer & Acidification",
-        conditionIndex: 76,
+        year: "1858 CE",
+        numericYear: 1858,
+        event: "Dispersal of the Royal Library of Oudh",
+        conditionIndex: 82,
         detail:
-          "Packed in galvanized iron trunks during administrative transfers.",
+          "Volume leaves extracted from royal collections in Lucknow following administrative turmoil in the post-1857 era.",
       },
       {
-        year: "1978",
-        numericYear: 1978,
-        event: "Fungal Inoculation",
-        conditionIndex: 62,
+        year: "1896 CE",
+        numericYear: 1896,
+        event: "Acquisition by the Victoria & Albert Museum",
+        conditionIndex: 86,
         detail:
-          "Aspergillus mold colonies caused purple staining along tail margins.",
-      },
-      {
-        year: "2008",
-        numericYear: 2008,
-        event: "Ethanol Sterilization",
-        conditionIndex: 75,
-        detail:
-          "Controlled alcohol vapor treatment neutralized inactive fungal spores.",
+          "V&A acquired the primary illustrated chronicle volume containing 116 paintings from the widow of a former Commissioner of Oudh.",
       },
       {
         year: "2026 CE",
         numericYear: 2026,
-        event: "Multispectral Extraction",
-        conditionIndex: 79,
+        event: "Guild High-Resolution Pigment Mapping",
+        conditionIndex: 88,
         detail:
-          "Ultra-violet multispectral photography recovered faded legal annotations.",
+          "Multispectral fluorescence scans identify original mineral pigment strata and microscopic court artist signature colophons.",
       },
     ],
   },
   {
     id: "ART-08",
-    title: "Cast Bronze Votive Seal",
-    period: "c. 1250 CE",
-    medium: "Lost-Wax Bronze",
+    title: "Indus Valley Steatite 'Unicorn' Seal",
+    period: "c. 2600–1900 BCE",
+    medium: "Carved & Alkali-Fired Steatite (Soapstone)",
     plateNumber: "PL-098",
     image:
-      "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=800&q=80",
+      "/unicorn.jpg",
     notes:
-      "Official seal insignia used by guild merchants to guarantee grain measure calibration.",
+      "Intaglio carved seal carrying the iconic single-horned mythical bull motif and undeciphered Harappan script symbols.",
     verification: {
-      assayMethod: "X-Ray Fluorescence (XRF) Alloy Assay",
-      datingConfidence: "13th Century Alloy Fingerprint // 99.7% Provenance",
+      assayMethod: "Harappan Glyptic Stratigraphy & Steatite Firing Analysis",
+      datingConfidence: "Mature Harappan Phase (c. 2600–1900 BCE)",
       spectroscopyResults:
-        "Copper (82.4%), Tin (12.1%), Lead (4.3%), Trace Silver (0.8%)",
+        "Talc-hydrated magnesium silicate hardened by firing past 1000°C to form enstatite and a white lustrous glaze",
       chainOfCustody:
-        "Riverbed Silt Dredging Find (1962) -> Guild Numismatic Vault 2026",
+        "Mohenjo-daro / Harappa Archaeological Excavations (1920s–1930s) -> National Museum Collections",
       verificationHash:
-        "SHA256: 8810bca3471092847bcdae682019384712093847bca19",
-      leadExaminer: "Dr. H. Jena, Archeometallurgist",
-      institution: "Maritime Trade Guild Research Laboratory",
+        "INDUS-CORPUS: HARAPPAN-STEATITE-UNICORN-GLYPTIC-M-SERIES",
+      leadExaminer: "Dr. K. Patnaik, FSA, Protohistoric Archaeologist",
+      institution: "Indus Civilisation Glyptic Research Circle",
       status: "AUTHENTICATED",
     },
     timeline: [
       {
-        year: "1250 CE",
-        numericYear: 1250,
-        event: "Lost-Wax Casting",
+        year: "2500 BCE",
+        numericYear: -2500,
+        event: "Intaglio Carving & Alkali Glaze",
         conditionIndex: 100,
         detail:
-          "Cast in bell-metal bronze with recessed negative intaglio seal matrix.",
+          "Carved in soft steatite with bronze/chert burins, coated with an alkali slip, and kiln-fired to harden into durable white enstatite.",
       },
       {
-        year: "1380 CE",
-        numericYear: 1380,
-        event: "River Estuary Loss",
+        year: "2100 BCE",
+        numericYear: -2100,
+        event: "Trade Guild Stamp Authentication",
+        conditionIndex: 94,
+        detail:
+          "Used to impress clay sealing tags on trade bundles of cotton, carnelian, and timber destined for the Persian Gulf and Mesopotamia.",
+      },
+      {
+        year: "1900 BCE",
+        numericYear: -1900,
+        event: "Anaerobic Soil Deposition",
         conditionIndex: 88,
         detail:
-          "Cargo boat capsized in tidal bar; seal settled into anaerobic silt bed.",
+          "Settlement abandonment covered the seal under flood alluvium, isolating the fired glaze from surface mechanical wear.",
       },
       {
-        year: "1620 CE",
-        numericYear: 1620,
-        event: "Cuprite Patination",
-        conditionIndex: 82,
+        year: "1924 CE",
+        numericYear: 1924,
+        event: "Excavation under Sir John Marshall",
+        conditionIndex: 86,
         detail:
-          "Stable dark red cuprite skin formed in low-oxygen brackish sediment.",
+          "Archaeological unearthing at Mohenjo-daro established the existence of the Indus Valley Civilisation on the world stage.",
       },
       {
-        year: "1962 CE",
-        numericYear: 1962,
-        event: "Dredging Recovery & Bronze Disease",
-        conditionIndex: 65,
+        year: "1977 CE",
+        numericYear: 1977,
+        event: "Corpus of Indus Seals and Inscriptions",
+        conditionIndex: 85,
         detail:
-          "Sudden air exposure triggered cuprous chloride bronze disease pits.",
-      },
-      {
-        year: "1995 CE",
-        numericYear: 1995,
-        event: "Sodium Sesquicarbonate Bath",
-        conditionIndex: 80,
-        detail:
-          "Two-year alkaline soak converted active chlorides into stable patina.",
+          "Standardized photographical and casting cataloging completed for archaeological and linguistic decipherment attempts.",
       },
       {
         year: "2026 CE",
         numericYear: 2026,
-        event: "Benzotriazole & Microcrystalline Wax",
+        event: "Guild Sub-Micron Intaglio Topography",
         conditionIndex: 85,
         detail:
-          "Vacuum-sealed in microcrystalline wax to isolate atmospheric moisture.",
+          "Optical confocal metrology maps microscopic micro-wear patterns left by ancient chert cutting tools.",
       },
     ],
   },
