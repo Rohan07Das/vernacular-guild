@@ -392,7 +392,7 @@ const INITIAL_DISPATCHES: Dispatch[] = [
     excerpt:
       "Discovered surviving wooden ligature blocks used for pre-independence regional prints, preserved in dried linseed oil.",
     image:
-      "https://media.istockphoto.com/id/464999964/photo/printing-press-letters-and-accessories.jpg?s=612x612&w=0&k=20&c=1TD7hCenJs7WPm63MRSrf_VWT7rciJzfWNV0pzBD-Nw=",
+      "/drawer.jpg",
     tags: ["Movable Type", "Press"],
   },
   {
