@@ -122,7 +122,7 @@ const CARTOGRAPHIC_NODES: Record<string, CartographicNode> = {
       "Balaena mysticetus (Bowhead Whale) bone collagen hardened in anaerobic permafrost; turf sods and dry-laid sedimentary limestone flagstones.",
     endangermentStatus: "Critical // Coastal permafrost erosion and wave storm surging",
     image:
-      "https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&fit=crop&w=1000&q=80",
+      "/thu.jpg",
     activeSurveys: 17,
   },
   greenland: {
@@ -144,7 +144,7 @@ const CARTOGRAPHIC_NODES: Record<string, CartographicNode> = {
       "Feldspathic granite, syenite, and biotite gneiss blocks bound with glacial clay; insulated with dense Carex peat turf blocks.",
     endangermentStatus: "High // Freeze-thaw spalling, sub-polar wind ablation and ground slump",
     image:
-      "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1000&q=80",
+      "/grl.jpg",
     activeSurveys: 23,
   },
   dene: {
@@ -166,7 +166,7 @@ const CARTOGRAPHIC_NODES: Record<string, CartographicNode> = {
       "Picea mariana (Black Spruce) compression wood, Betula papyrifera (Paper Birch) bark containing natural betulin moisture repellents.",
     endangermentStatus: "Stable // Traditional harvesting lineages maintained by elders",
     image:
-      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=80",
+      "/den.jpg",
     activeSurveys: 14,
   },
   inupiat: {
@@ -188,7 +188,7 @@ const CARTOGRAPHIC_NODES: Record<string, CartographicNode> = {
       "Ocean-seasoned driftwood larch and spruce; thick tundra sod blocks and bearded seal skin (ugruk) membrane vapor seals.",
     endangermentStatus: "Critical // Coastal bluff thaw subsidence and arctic storm storm-surge erosion",
     image:
-      "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=1000&q=80",
+      "/inu.jpg",
     activeSurveys: 16,
   },
 
@@ -212,7 +212,7 @@ const CARTOGRAPHIC_NODES: Record<string, CartographicNode> = {
       "Larix sibirica (Siberian Larch) exhibiting dense growth rings with natural water-insoluble arabinogalactans, naturally preserved in sub-surface permafrost.",
     endangermentStatus: "Critical // Climate permafrost thaw & glacial lens melting",
     image:
-      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1000&q=80",
+      "alt.jpg",
     activeSurveys: 22,
   },
   siberia: {
@@ -234,7 +234,7 @@ const CARTOGRAPHIC_NODES: Record<string, CartographicNode> = {
       "Slow-growth Pinus sylvestris and Siberian larch harvested in dead-winter dormancy to minimize sap content and prevent frost-splitting at -50°C.",
     endangermentStatus: "High // Structural wood rot, seasonal forest fires & urban redevelopment",
     image:
-      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=80",
+      "/sib.jpg",
     activeSurveys: 18,
   },
   yakut: {
@@ -256,7 +256,7 @@ const CARTOGRAPHIC_NODES: Record<string, CartographicNode> = {
       "Siberian larch logs barked and sun-dried; insulated with dried sphagnum moss and organic clay/dung biocement rendering.",
     endangermentStatus: "Vulnerable // Permafrost subsidence (thermokarst) undermining timber pilings",
     image:
-      "https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&fit=crop&w=1000&q=80",
+      "/yak.jpg",
     activeSurveys: 15,
   },
 
