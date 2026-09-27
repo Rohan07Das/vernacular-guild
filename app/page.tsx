@@ -102,6 +102,165 @@ interface CustomConfirmDialog {
 }
 
 const CARTOGRAPHIC_NODES: Record<string, CartographicNode> = {
+  // --- NORTH AMERICAN ARCTIC & NORTH ATLANTIC REGIONS (CALIBRATED) ---
+  inuit: {
+    id: "NODE-THU",
+    name: "Somerset Island & High Arctic Archipelago",
+    culture: "Thule & Classic Inuit Whalebone Builders",
+    coordinates: "74.0000° N, 93.5000° W",
+    x: 24.5,
+    y: 17.2,
+    hitboxWidth: 4,
+    hitboxHeight: 6,
+    era: "c. 1100 – 1600 CE",
+    focus: "Bowhead Whale Rib Vaults, Flagstone & Sod Cold-Traps",
+    brief:
+      "Semi-subterranean oval winter houses roofed with arched bowhead whale mandibles and ribs, insulated under dense turf and tundra moss layers.",
+    extendedHistory:
+      "In a high arctic landscape devoid of standing timber or driftwood, Thule whale-hunting ancestors engineered permanent winter houses (qarmat) sunk up to one meter into the ground. Massive bowhead whale mandibles and rib cages served as load-bearing rafters over flagstone-lined floors, entered via a sunken sub-surface tunnel that trapped cold air below the sleeping bench.",
+    materialScience:
+      "Balaena mysticetus (Bowhead Whale) bone collagen hardened in anaerobic permafrost; turf sods and dry-laid sedimentary limestone flagstones.",
+    endangermentStatus: "Critical // Coastal permafrost erosion and wave storm surging",
+    image:
+      "https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&fit=crop&w=1000&q=80",
+    activeSurveys: 17,
+  },
+  greenland: {
+    id: "NODE-GRL",
+    name: "Hvalsey & Tunulliarfik Fjord",
+    culture: "Greenland Norse Settler Guilds",
+    coordinates: "60.8294° N, 45.7828° W",
+    x: 37.2,
+    y: 27.2,
+    hitboxWidth: 4,
+    hitboxHeight: 6,
+    era: "c. 985 – 1450 CE",
+    focus: "Granite Ashlar, Clay Mortar & Thick Turf Enclosures",
+    brief:
+      "Monumental Norse ashlar churches and longhouse byres built with dual dry-stone granite skins insulated with multi-layered peat turf cores.",
+    extendedHistory:
+      "Established by Erik the Red's Norse colonists, the Eastern Settlement featured sophisticated masonry like Hvalsey Church, whose 5-meter-high gables remain standing after 600 years. Masons dressed irregular local granite boulders with clay mortar, flanked by sod turf walls up to two meters thick to insulate livestock and residents during the onset of the Little Ice Age.",
+    materialScience:
+      "Feldspathic granite, syenite, and biotite gneiss blocks bound with glacial clay; insulated with dense Carex peat turf blocks.",
+    endangermentStatus: "High // Freeze-thaw spalling, sub-polar wind ablation and ground slump",
+    image:
+      "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1000&q=80",
+    activeSurveys: 23,
+  },
+  dene: {
+    id: "NODE-DEN",
+    name: "Dehcho & Mackenzie River Basin",
+    culture: "Northern Dene & Athabaskan Guilds",
+    coordinates: "61.8500° N, 121.3500° W",
+    x: 14.8,
+    y: 24.5,
+    hitboxWidth: 4,
+    hitboxHeight: 6,
+    era: "c. 1000 CE – Present",
+    focus: "Curved Spruce-Pole Conical Frames & Spruce-Root Stitching",
+    brief:
+      "Boreal conical and ridged winter shelters formed from flexible black spruce poles, double-sheathed in peeled birch bark and stitched with spruce roots.",
+    extendedHistory:
+      "Engineered for rapid seasonal mobility across sub-arctic muskeg and taiga, Dene structures utilized resilient black spruce poles locked together in tripod or four-pole apex knots. Cladding rolls of Betula papyrifera bark were harvested in spring, softened over smoky fires, and lashed with split Watap (Picea mariana root) cords, resisting sub-zero snow accumulation without brittle fracture.",
+    materialScience:
+      "Picea mariana (Black Spruce) compression wood, Betula papyrifera (Paper Birch) bark containing natural betulin moisture repellents.",
+    endangermentStatus: "Stable // Traditional harvesting lineages maintained by elders",
+    image:
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=80",
+    activeSurveys: 14,
+  },
+  inupiat: {
+    id: "NODE-INU",
+    name: "Point Barrow & Utqiaġvik Coastal Plain",
+    culture: "Iñupiat Marine Arctic Builders",
+    coordinates: "71.2906° N, 156.7886° W",
+    x: 7.2,
+    y: 20.5,
+    hitboxWidth: 4,
+    hitboxHeight: 6,
+    era: "c. 800 CE – Present",
+    focus: "Driftwood Post-and-Beam Frames & Qargi Sod Chambers",
+    brief:
+      "Semi-subterranean communal ceremonial houses (qargit) built from sea-drifted spruce timbers banked with deep permafrost turf berms.",
+    extendedHistory:
+      "Along the Beaufort and Chukchi Sea shores, Iñupiat hunters collected ocean-drifted logs transported by arctic currents from distant Siberian and Yukon river mouths. They framed deep subterranean meeting lodges (qargit) and family sod houses, burying walls under thick layers of coastal peat to maintain a temperature gradient using only seal-oil soapstone lamps (qulliq).",
+    materialScience:
+      "Ocean-seasoned driftwood larch and spruce; thick tundra sod blocks and bearded seal skin (ugruk) membrane vapor seals.",
+    endangermentStatus: "Critical // Coastal bluff thaw subsidence and arctic storm storm-surge erosion",
+    image:
+      "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=1000&q=80",
+    activeSurveys: 16,
+  },
+
+  // --- SIBERIA & EURASIAN SUB-ARCTIC REGIONS (CALIBRATED) ---
+  altai: {
+    id: "NODE-ALT",
+    name: "Altai & Ukok Permafrost Basin",
+    culture: "Pazyryk & Scythian Nomadic Guilds",
+    coordinates: "49.3000° N, 87.5000° E",
+    x: 69.2,
+    y: 31.8,
+    hitboxWidth: 4,
+    hitboxHeight: 6,
+    era: "c. 500 – 250 BCE",
+    focus: "Subterranean Double-Walled Larch Cribs & Ice Seal",
+    brief:
+      "Subterranean double-crib mortised timber chambers of Siberian larch sealed under boulder stone kurgans that trapped condensation into perpetual permafrost lenses.",
+    extendedHistory:
+      "High in the Ukok and Pazyryk mountain steppe valleys, Iron Age Saka-Scythian builders excavated deep gravel pits, lining them with nested inner and outer larch log chambers roofed with birch bark and heavy tree trunks. The broken stone cairn above acted as a thermal condenser: sub-zero winter air sank into the scree and formed permanent internal lenses of lens ice, preventing organic decay for over 2,400 years.",
+    materialScience:
+      "Larix sibirica (Siberian Larch) exhibiting dense growth rings with natural water-insoluble arabinogalactans, naturally preserved in sub-surface permafrost.",
+    endangermentStatus: "Critical // Climate permafrost thaw & glacial lens melting",
+    image:
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1000&q=80",
+    activeSurveys: 22,
+  },
+  siberia: {
+    id: "NODE-SIB",
+    name: "Yenisei Basin & Central Taiga",
+    culture: "Siberian Ostrog Frontier Carpenter Guilds",
+    coordinates: "58.4500° N, 92.1667° E",
+    x: 71.5,
+    y: 25.8,
+    hitboxWidth: 4,
+    hitboxHeight: 6,
+    era: "c. 1586 – 1710 CE",
+    focus: "Interlocking Gorodnya Log Ramparts & Pyramidal Watchtowers",
+    brief:
+      "Square and octagonal timber watchtowers with cantilevered machicolations (oblomy) and soil-filled interlinked log crib walls resistant to artillery and winter freezing.",
+    extendedHistory:
+      "Pioneering across river routes like the Ob and Yenisei, frontier carpenter guilds constructed self-contained wooden citadels (ostrogs). Masons and woodsmen locked whole pine and larch logs using 'in-a-cup' (v chashu) corner joints, filling double-walled log cells (gorodnya) with rammed earth to absorb seismic freeze-thaw soil movement and projectile strikes.",
+    materialScience:
+      "Slow-growth Pinus sylvestris and Siberian larch harvested in dead-winter dormancy to minimize sap content and prevent frost-splitting at -50°C.",
+    endangermentStatus: "High // Structural wood rot, seasonal forest fires & urban redevelopment",
+    image:
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=80",
+    activeSurveys: 18,
+  },
+  yakut: {
+    id: "NODE-YAK",
+    name: "Lena Basin & Sakha Permafrost Plain",
+    culture: "Yakut (Sakha) Earth & Wood Craftsmen",
+    coordinates: "62.0355° N, 129.6755° E",
+    x: 81.5,
+    y: 25.8,
+    hitboxWidth: 4,
+    hitboxHeight: 6,
+    era: "c. 1250 CE – Present",
+    focus: "Inclined Log Balagan Dwellings & Carved Serge Pillars",
+    brief:
+      "Four-pillar post-and-beam winter homes with outward-slanted larch log walls insulated with fermented turf and horse-manure mud coating.",
+    extendedHistory:
+      "Faced with extreme sub-polar temperature drops (-60°C) and continuous permafrost, the Sakha developed the 'balagan' winter dwelling. An interior framework of four stout larch posts supports a low-pitched earth roof; the inclined perimeter walls deflect bitter arctic winds, while an exterior pargeting of mud, clay, and cow dung seals air leaks and preserves radiant stove heat.",
+    materialScience:
+      "Siberian larch logs barked and sun-dried; insulated with dried sphagnum moss and organic clay/dung biocement rendering.",
+    endangermentStatus: "Vulnerable // Permafrost subsidence (thermokarst) undermining timber pilings",
+    image:
+      "https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&fit=crop&w=1000&q=80",
+    activeSurveys: 15,
+  },
+
+  // --- PREVIOUSLY CONFIGURED REGIONS ---
   kalinga: {
     id: "NODE-IND",
     name: "Kalinga & Utkal Basin",
@@ -120,8 +279,7 @@ const CARTOGRAPHIC_NODES: Record<string, CartographicNode> = {
     materialScience:
       "Ferruginous sandstone bound by iron-rich silicate cements. Magnetite and hematite inclusions create passive oxidation barriers, preventing subsurface exfoliation.",
     endangermentStatus: "High // Ground-moisture efflorescence & salt crystallization",
-    image:
-      "/kalinga.jpg",
+    image: "/kalinga.jpg",
     activeSurveys: 28,
   },
   japan: {
@@ -142,8 +300,7 @@ const CARTOGRAPHIC_NODES: Record<string, CartographicNode> = {
     materialScience:
       "Chamaecyparis obtusa (Hinoki Cypress) containing natural alpha-cadinol resins, conferring innate fungal and termite resistance spanning over 1,300 years.",
     endangermentStatus: "Stable // Active lineage of hereditary master carpenters (Miyadaiku)",
-    image:
-      "/jpn.jpg",
+    image: "/jpn.jpg",
     activeSurveys: 42,
   },
   mesopotamia: {
@@ -164,8 +321,7 @@ const CARTOGRAPHIC_NODES: Record<string, CartographicNode> = {
     materialScience:
       "Flocculated river silt high in montmorillonite clay, tempered with straw chaff and sealed with natural pitch hydrocarbons.",
     endangermentStatus: "Critical // Wind ablation & armed conflict zone fragmentation",
-    image:
-      "/mes.jpg",
+    image: "/mes.jpg",
     activeSurveys: 14,
   },
   greece: {
@@ -186,8 +342,7 @@ const CARTOGRAPHIC_NODES: Record<string, CartographicNode> = {
     materialScience:
       "Metamorphic calcitic marble with interlocking calcite crystals displaying high compressive strength and low moisture absorption (<0.1%).",
     endangermentStatus: "Vulnerable // Acid rain dissolution of high-relief fluting",
-    image:
-      "/gre.jpg",
+    image: "/gre.jpg",
     activeSurveys: 33,
   },
   egypt: {
@@ -208,8 +363,7 @@ const CARTOGRAPHIC_NODES: Record<string, CartographicNode> = {
     materialScience:
       "Nile alluvium compounded with cattle manure enzymes and wheat straw, producing porous low-thermal-conductivity walls.",
     endangermentStatus: "Endangered // Concrete replacement & river dam inundation",
-    image:
-      "egy.jpg",
+    image: "/egy.jpg",
     activeSurveys: 19,
   },
   andes: {
@@ -230,8 +384,7 @@ const CARTOGRAPHIC_NODES: Record<string, CartographicNode> = {
     materialScience:
       "Porphyritic Andesite and Diorite (Mohs hardness 6.0–6.5) chiseled with hematite hammerstones and smoothed using wet quartz sands.",
     endangermentStatus: "Vulnerable // Tourist erosion & seismic displacement",
-    image:
-      "/and.jpg",
+    image: "/and.jpg",
     activeSurveys: 21,
   },
   germany: {
@@ -252,8 +405,7 @@ const CARTOGRAPHIC_NODES: Record<string, CartographicNode> = {
     materialScience:
       "Tertiary alloy: Lead (75%), Antimony (20%), and Tin (5%). Formulated for low melting temperature (260°C) and microscopic edge acuity.",
     endangermentStatus: "Archived // Historical foundry matrices preserved in guild vaults",
-    image:
-      "/ger.jpg",
+    image: "/ger.jpg",
     activeSurveys: 37,
   },
   khmer: {
@@ -274,8 +426,7 @@ const CARTOGRAPHIC_NODES: Record<string, CartographicNode> = {
     materialScience:
       "Glauconitic arkosic sandstone with high silicate binder ratios; subterranean laterite plinths hardened by exposure to air.",
     endangermentStatus: "High // Groundwater depletion causing subterranean sub-plinth compaction",
-    image:
-      "/khm.jpg",
+    image: "/khm.jpg",
     activeSurveys: 31,
   },
   mali: {
@@ -296,8 +447,7 @@ const CARTOGRAPHIC_NODES: Record<string, CartographicNode> = {
     materialScience:
       "Alluvial clay fermented with rice husks, fish oil, and shea butter baobab extracts, providing water repellency and flexibility against desert thermal shock.",
     endangermentStatus: "Critical // Irregular precipitation patterns and modern cement patch degradation",
-    image:
-      "/mal.jpg",
+    image: "/mal.jpg",
     activeSurveys: 16,
   },
   persia: {
@@ -318,8 +468,7 @@ const CARTOGRAPHIC_NODES: Record<string, CartographicNode> = {
     materialScience:
       "High-alkali tin-opacified glazed tiles over silica clay bodies; gypsum mortar (gach) setting within 8 minutes without wooden centering frames.",
     endangermentStatus: "Moderate // Structural vibration and subsurface ground subsidence",
-    image:
-      "/per.jpg",
+    image: "/per.jpg",
     activeSurveys: 24,
   },
   maya: {
@@ -340,8 +489,7 @@ const CARTOGRAPHIC_NODES: Record<string, CartographicNode> = {
     materialScience:
       "Karst limestone aggregate mixed with organic polyphenolic compounds derived from local tree bark, which cross-link to form an elastic waterproof biocement.",
     endangermentStatus: "High // Tropical root wedging and acid biomechanic lichen decay",
-    image:
-      "/may.jpg",
+    image: "/may.jpg",
     activeSurveys: 22,
   },
   zimbabwe: {
@@ -362,8 +510,7 @@ const CARTOGRAPHIC_NODES: Record<string, CartographicNode> = {
     materialScience:
       "Coarse-grained biotite granite displaying high quartz and microcline feldspar content; complete absence of chemical mortar eliminates water retention and freeze-thaw cracking.",
     endangermentStatus: "Vulnerable // Invasive ficus tree root wedging and wall tilt",
-    image:
-      "/zim.jpg",
+    image: "/zim.jpg",
     activeSurveys: 17,
   },
 };
@@ -378,8 +525,7 @@ const INITIAL_DISPATCHES: Dispatch[] = [
     date: "14h ago",
     excerpt:
       "The specific high-iron clay composition and slow-cooling process haven't altered since the 11th century temple plinths.",
-    image:
-      "/clay.jpg",
+    image: "/clay.jpg",
     tags: ["Terracotta", "Stone Carving"],
   },
   {
@@ -391,8 +537,7 @@ const INITIAL_DISPATCHES: Dispatch[] = [
     date: "1d ago",
     excerpt:
       "Discovered surviving wooden ligature blocks used for pre-independence regional prints, preserved in dried linseed oil.",
-    image:
-      "/drawer.jpg",
+    image: "/drawer.jpg",
     tags: ["Movable Type", "Press"],
   },
   {
@@ -404,8 +549,7 @@ const INITIAL_DISPATCHES: Dispatch[] = [
     date: "2d ago",
     excerpt:
       "Erosion along the base reliefs reveals hidden interlocking stone tongue-and-groove joints without mortar.",
-    image:
-      "/gate.jpg",
+    image: "/gate.jpg",
     tags: ["Architecture", "Heritage"],
   },
 ];
@@ -417,8 +561,7 @@ const ARTIFACT_GALLERY: ArchivalArtifact[] = [
     period: "c. 1026–1027 CE",
     medium: "Carved Golden Solanki Sandstone",
     plateNumber: "PL-091",
-    image:
-      "/suntemple.jpg",
+    image: "/suntemple.jpg",
     notes:
       "Surviving twin monolithic archway pillars leading to the Sabha Mandapa at the Modhera Sun Temple complex.",
     verification: {
@@ -491,8 +634,7 @@ const ARTIFACT_GALLERY: ArchivalArtifact[] = [
     period: "c. 1778–1800 CE",
     medium: "Steel Punches, Copper Matrices & Lead Type Alloy",
     plateNumber: "PL-092",
-    image:
-      "/bengal.jpg",
+    image: "/bengal.jpg",
     notes:
       "Early vernacular movable typeface punch-cut by Panchanan Karmakar under Charles Wilkins.",
     verification: {
@@ -565,8 +707,7 @@ const ARTIFACT_GALLERY: ArchivalArtifact[] = [
     period: "c. 1626–1656 CE",
     medium: "Alluvial Clay & Low-Fire Kiln Brick",
     plateNumber: "PL-093",
-    image:
-      "/bisnupur.jpg",
+    image: "/bisnupur.jpg",
     notes:
       "Carved and fired architectural facade tile from the Malla royal temple enclave at Bishnupur.",
     verification: {
@@ -639,8 +780,7 @@ const ARTIFACT_GALLERY: ArchivalArtifact[] = [
     period: "1852–1854 CE",
     medium: "Embossed Sealing Wax & Lithographed Rag Paper",
     plateNumber: "PL-094",
-    image:
-      "stamp.jpg",
+    image: "stamp.jpg",
     notes:
       "First postal prepayment issues of the Subcontinent: circular embossed Scinde Dawk and Calcutta-lithographed Victoria issue.",
     verification: {
@@ -713,8 +853,7 @@ const ARTIFACT_GALLERY: ArchivalArtifact[] = [
     period: "c. 1571–1607 CE",
     medium: "Carved Makrana White Marble",
     plateNumber: "PL-095",
-    image:
-      "salim.jpg",
+    image: "salim.jpg",
     notes:
       "Masterwork pierced marble fretwork screens installed on the circumambulatory verandah at Fatehpur Sikri.",
     verification: {
@@ -787,8 +926,7 @@ const ARTIFACT_GALLERY: ArchivalArtifact[] = [
     period: "c. 375–415 CE",
     medium: "Forge-Welded Wrought Iron (Low Carbon, High Phosphorus)",
     plateNumber: "PL-096",
-    image:
-      "/pillar.jpg",
+    image: "/pillar.jpg",
     notes:
       "7.21-meter, 6-tonne monolithic wrought iron pillar erected under Chandragupta II (Vikramaditya), noted for exceptional corrosion resistance.",
     verification: {
@@ -861,8 +999,7 @@ const ARTIFACT_GALLERY: ArchivalArtifact[] = [
     period: "c. 1590–1597 CE",
     medium: "Opaque Watercolor & Gold Leaf on Burnished Paper",
     plateNumber: "PL-097",
-    image:
-      "print.jpg",
+    image: "print.jpg",
     notes:
       "Official court history of Akbar composed in Persian by Abu'l-Fazl and illuminated by royal karkhana atelier masters.",
     verification: {
@@ -935,8 +1072,7 @@ const ARTIFACT_GALLERY: ArchivalArtifact[] = [
     period: "c. 2600–1900 BCE",
     medium: "Carved & Alkali-Fired Steatite (Soapstone)",
     plateNumber: "PL-098",
-    image:
-      "/unicorn.jpg",
+    image: "/unicorn.jpg",
     notes:
       "Intaglio carved seal carrying the iconic single-horned mythical bull motif and undeciphered Harappan script symbols.",
     verification: {
@@ -1306,8 +1442,19 @@ export default function Home() {
               </h1>
             </div>
 
-            {/* Navigation & Action Buttons */}
+            {/* Navigation & Action Buttons: [Recycle] is positioned above */}
             <div className="flex flex-col sm:items-end gap-2 w-full lg:w-auto">
+              <div className="flex justify-start sm:justify-end w-full">
+                <button
+                  onClick={requestPurgeAllDispatches}
+                  title="Recycle and revert all custom dispatches back to initial curated archive"
+                  className="px-2.5 py-1 font-mono text-[11px] uppercase tracking-wider border border-stone-800 bg-stone-100 text-stone-700 hover:bg-red-600 hover:text-white hover:border-red-600 transition-all duration-200 shadow-[2px_2px_0px_rgba(28,25,23,1)] flex items-center gap-1.5 active:translate-x-[1px] active:translate-y-[1px]"
+                >
+                  <RotateCcw className="w-3 h-3" />
+                  <span>[Recycle]</span>
+                </button>
+              </div>
+
               <div className="flex flex-wrap gap-2">
                 <button
                   onClick={() => {
@@ -1339,18 +1486,6 @@ export default function Home() {
                   className="px-3 py-1.5 font-mono text-xs uppercase tracking-wider border border-stone-800 bg-white text-stone-900 hover:bg-red-600 hover:text-white hover:border-red-600 transition-all duration-200 shadow-[2px_2px_0px_rgba(28,25,23,1)] active:translate-x-[1px] active:translate-y-[1px]"
                 >
                   [Submit Evidence +]
-                </button>
-              </div>
-
-              {/* Dedicated Archival Recycle / Reset button */}
-              <div className="flex justify-start sm:justify-end w-full">
-                <button
-                  onClick={requestPurgeAllDispatches}
-                  title="Recycle and revert all custom dispatches back to initial curated archive"
-                  className="px-1.5 py-1 font-mono text-[11px] uppercase tracking-wider border border-stone-800 bg-stone-100 text-stone-700 hover:bg-red-600 hover:text-white hover:border-red-600 transition-all duration-200 shadow-[2px_2px_0px_rgba(28,25,23,1)] flex items-center gap-1 active:translate-x-[1px] active:translate-y-[1px]"
-                >
-                  <RotateCcw className="w-3 h-3" />
-                  <span>[Recycle]</span>
                 </button>
               </div>
             </div>
@@ -1404,7 +1539,7 @@ export default function Home() {
               />
             </button>
 
-            {/* Submenu Dropdown Panel (Positioned exactly over the designated card area) */}
+            {/* Submenu Dropdown Panel */}
             {activeDropdown === "TERRACOTTA" && (
               <div className="absolute left-0 top-full mt-2 w-72 sm:w-80 bg-stone-50 border-2 border-stone-900 p-3 shadow-[6px_6px_0px_rgba(28,25,23,1)] z-40 animate-in fade-in zoom-in-95 duration-150">
                 <div className="flex items-center justify-between border-b border-stone-300 pb-2 mb-2 font-mono text-[10px] text-stone-500">
@@ -1424,7 +1559,7 @@ export default function Home() {
                       }}
                       className="w-full text-left p-2 border border-stone-200 bg-white hover:border-red-600 hover:bg-red-50/60 transition-all group"
                     >
-                      <div className="font-serif font-bold text-sm tracking-wider text-stone-900 group-hover:text-red-600 flex items-center justify-between">
+                      <div className="font-mono uppercase tracking-wider font-bold text-xs text-stone-900 group-hover:text-red-600 flex items-center justify-between">
                         <span>{item.label}</span>
                         <CornerDownRight className="w-3 h-3 text-stone-400 group-hover:text-red-600" />
                       </div>
@@ -1483,7 +1618,7 @@ export default function Home() {
               />
             </button>
 
-            {/* Submenu Dropdown Panel (Positioned exactly over the designated card area) */}
+            {/* Submenu Dropdown Panel */}
             {activeDropdown === "TYPE" && (
               <div className="absolute left-0 sm:-left-12 top-full mt-2 w-72 sm:w-80 bg-stone-50 border-2 border-stone-900 p-3 shadow-[6px_6px_0px_rgba(28,25,23,1)] z-40 animate-in fade-in zoom-in-95 duration-150">
                 <div className="flex items-center justify-between border-b border-stone-300 pb-2 mb-2 font-mono text-[10px] text-stone-500">
@@ -1503,7 +1638,7 @@ export default function Home() {
                       }}
                       className="w-full text-left p-2 border border-stone-200 bg-white hover:border-red-600 hover:bg-red-50/60 transition-all group"
                     >
-                      <div className="font-serif font-bold text-sm text-stone-900 group-hover:text-red-600 flex items-center justify-between">
+                      <div className="font-mono uppercase tracking-wider font-bold text-xs text-stone-900 group-hover:text-red-600 flex items-center justify-between">
                         <span>{item.label}</span>
                         <CornerDownRight className="w-3 h-3 text-stone-400 group-hover:text-red-600" />
                       </div>
@@ -1542,7 +1677,7 @@ export default function Home() {
           </button>
         </div>
 
-        {/* Primary Dispatches Grid with Individual Evidence Removal Options */}
+        {/* Primary Dispatches Grid */}
         <section ref={dispatchesRef} className="my-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {filteredDispatches.map((dispatch) => (
@@ -1550,7 +1685,6 @@ export default function Home() {
                 key={dispatch.id}
                 className="group relative border border-stone-400 bg-white p-4 transition-all duration-500 hover:border-red-600 hover:shadow-[6px_6px_0px_rgba(220,38,38,1)]"
               >
-                {/* Header row with Delete shortcut button on hover */}
                 <div className="flex justify-between items-center font-mono text-xs mb-3 text-stone-500">
                   <span className="font-bold text-stone-800 group-hover:text-red-600 transition-colors">
                     {dispatch.id}
@@ -1747,7 +1881,7 @@ export default function Home() {
             <div className="flex items-center gap-3 font-mono text-xs text-stone-500">
               <span className="flex items-center gap-1 text-stone-700 font-semibold">
                 <Radio className="w-3 h-3 text-red-600 animate-pulse" />
-                12 MONITORED ARCHITECTURAL CRADLES
+                {Object.keys(CARTOGRAPHIC_NODES).length} MONITORED ARCHITECTURAL CRADLES
               </span>
               <span className="hidden md:inline">// CALIBRATED REGISTER</span>
             </div>
@@ -1834,7 +1968,7 @@ export default function Home() {
                     onMouseEnter={() => setHoveredRegionKey(key)}
                     className={`px-2 py-1 border uppercase transition-all ${
                       hoveredRegionKey === key
-                        ? "bg-red-600 text-white border-red-600 font-bold shadow-[2px_2px_0px_rgba(28,25,23,1)]"
+                        ? "bg-red-600 text-white border-red-600 font-bold shadow-[2px_2px_0px_rgba(220,38,38,1)]"
                         : "bg-stone-100 text-stone-700 border-stone-300 hover:border-stone-800"
                     }`}
                   >
@@ -2446,7 +2580,6 @@ export default function Home() {
               </p>
             </div>
 
-            {/* In the modal: completely full color without any grayscale or contrast filters */}
             <div className="relative aspect-[21/9] border border-stone-400 overflow-hidden bg-stone-200 mb-4">
               <img
                 src={detailedMapNode.image}
