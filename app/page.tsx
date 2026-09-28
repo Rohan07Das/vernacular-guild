@@ -1358,7 +1358,7 @@ export default function Home() {
         const img = new Image();
         img.onload = () => {
           const canvas = document.createElement("canvas");
-          const maxDim = 800; // Constrain max dimension to 800px for crisp display under 50KB
+          const maxDim = 800;
           let width = img.width;
           let height = img.height;
           if (width > height) {
@@ -1481,13 +1481,13 @@ export default function Home() {
               </h1>
             </div>
 
-            {/* Navigation & Action Buttons: [Recycle] is positioned above */}
+            {/* Navigation & Action Buttons: 1px Borders with Unified Mechanical Pressed States */}
             <div className="flex flex-col sm:items-end gap-2 w-full lg:w-auto">
               <div className="flex justify-start sm:justify-end w-full">
                 <button
                   onClick={requestPurgeAllDispatches}
                   title="Recycle and revert all custom dispatches back to initial curated archive"
-                  className="px-2.5 py-1 font-mono text-[11px] uppercase tracking-wider border border-stone-800 bg-stone-100 text-stone-700 hover:bg-red-600 hover:text-white hover:border-red-600 transition-all duration-200 shadow-[2px_2px_0px_rgba(28,25,23,1)] flex items-center gap-1.5 active:translate-x-[1px] active:translate-y-[1px]"
+                  className="px-2.5 py-1 font-mono text-[11px] uppercase tracking-wider border border-stone-800 bg-stone-100 text-stone-700 hover:bg-red-600 hover:text-white hover:border-stone-900 transition-all duration-100 ease-out shadow-[3px_3px_0px_rgba(28,25,23,1)] hover:shadow-[1px_1px_0px_rgba(28,25,23,1)] hover:translate-x-[2px] hover:translate-y-[2px] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none flex items-center gap-1.5 cursor-pointer select-none"
                 >
                   <RotateCcw className="w-3 h-3" />
                   <span>[Recycle]</span>
@@ -1500,7 +1500,7 @@ export default function Home() {
                     setActiveFilter("ALL");
                     dispatchesRef.current?.scrollIntoView({ behavior: "smooth" });
                   }}
-                  className="px-3 py-1.5 font-mono text-xs uppercase tracking-wider border border-stone-800 bg-white text-stone-900 hover:bg-red-600 hover:text-white hover:border-red-600 transition-all duration-200 shadow-[2px_2px_0px_rgba(28,25,23,1)] active:translate-x-[1px] active:translate-y-[1px]"
+                  className="px-3 py-1.5 font-mono text-xs uppercase tracking-wider border border-stone-800 bg-white text-stone-900 hover:bg-red-600 hover:text-white hover:border-stone-900 transition-all duration-100 ease-out shadow-[3px_3px_0px_rgba(28,25,23,1)] hover:shadow-[1px_1px_0px_rgba(28,25,23,1)] hover:translate-x-[2px] hover:translate-y-[2px] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none cursor-pointer select-none"
                 >
                   [Field Reports]
                 </button>
@@ -1508,7 +1508,7 @@ export default function Home() {
                   onClick={() => {
                     specimensRef.current?.scrollIntoView({ behavior: "smooth" });
                   }}
-                  className="px-3 py-1.5 font-mono text-xs uppercase tracking-wider border border-stone-800 bg-white text-stone-900 hover:bg-red-600 hover:text-white hover:border-red-600 transition-all duration-200 shadow-[2px_2px_0px_rgba(28,25,23,1)] active:translate-x-[1px] active:translate-y-[1px]"
+                  className="px-3 py-1.5 font-mono text-xs uppercase tracking-wider border border-stone-800 bg-white text-stone-900 hover:bg-red-600 hover:text-white hover:border-stone-900 transition-all duration-100 ease-out shadow-[3px_3px_0px_rgba(28,25,23,1)] hover:shadow-[1px_1px_0px_rgba(28,25,23,1)] hover:translate-x-[2px] hover:translate-y-[2px] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none cursor-pointer select-none"
                 >
                   [Specimen Index]
                 </button>
@@ -1516,13 +1516,13 @@ export default function Home() {
                   onClick={() => {
                     cartographyRef.current?.scrollIntoView({ behavior: "smooth" });
                   }}
-                  className="px-3 py-1.5 font-mono text-xs uppercase tracking-wider border border-stone-800 bg-white text-stone-900 hover:bg-red-600 hover:text-white hover:border-red-600 transition-all duration-200 shadow-[2px_2px_0px_rgba(28,25,23,1)] active:translate-x-[1px] active:translate-y-[1px]"
+                  className="px-3 py-1.5 font-mono text-xs uppercase tracking-wider border border-stone-800 bg-white text-stone-900 hover:bg-red-600 hover:text-white hover:border-stone-900 transition-all duration-100 ease-out shadow-[3px_3px_0px_rgba(28,25,23,1)] hover:shadow-[1px_1px_0px_rgba(28,25,23,1)] hover:translate-x-[2px] hover:translate-y-[2px] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none cursor-pointer select-none"
                 >
                   [World Atlas]
                 </button>
                 <button
                   onClick={() => setIsSubmitOpen(true)}
-                  className="px-3 py-1.5 font-mono text-xs uppercase tracking-wider border border-stone-800 bg-white text-stone-900 hover:bg-red-600 hover:text-white hover:border-red-600 transition-all duration-200 shadow-[2px_2px_0px_rgba(28,25,23,1)] active:translate-x-[1px] active:translate-y-[1px]"
+                  className="px-3 py-1.5 font-mono text-xs uppercase tracking-wider border border-stone-800 bg-white text-stone-900 hover:bg-red-600 hover:text-white hover:border-stone-900 transition-all duration-100 ease-out shadow-[3px_3px_0px_rgba(28,25,23,1)] hover:shadow-[1px_1px_0px_rgba(28,25,23,1)] hover:translate-x-[2px] hover:translate-y-[2px] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none cursor-pointer select-none"
                 >
                   [Submit Evidence +]
                 </button>
@@ -1580,7 +1580,7 @@ export default function Home() {
 
             {/* Submenu Dropdown Panel */}
             {activeDropdown === "TERRACOTTA" && (
-              <div className="absolute left-0 top-full mt-2 w-72 sm:w-80 bg-stone-50 border-2 border-stone-900 p-3 shadow-[6px_6px_0px_rgba(28,25,23,1)] z-40 animate-in fade-in zoom-in-95 duration-150">
+              <div className="absolute left-0 top-full mt-2 w-72 sm:w-80 bg-stone-50 border border-stone-900 p-3 shadow-[6px_6px_0px_rgba(28,25,23,1)] z-40 animate-in fade-in zoom-in-95 duration-150">
                 <div className="flex items-center justify-between border-b border-stone-300 pb-2 mb-2 font-mono text-[10px] text-stone-500">
                   <span className="flex items-center gap-1 text-red-600 font-bold uppercase">
                     <Layers className="w-3 h-3" /> [ TERRACOTTA ARCHIVE DOSSIERS ]
@@ -1659,7 +1659,7 @@ export default function Home() {
 
             {/* Submenu Dropdown Panel */}
             {activeDropdown === "TYPE" && (
-              <div className="absolute left-0 sm:-left-12 top-full mt-2 w-72 sm:w-80 bg-stone-50 border-2 border-stone-900 p-3 shadow-[6px_6px_0px_rgba(28,25,23,1)] z-40 animate-in fade-in zoom-in-95 duration-150">
+              <div className="absolute left-0 sm:-left-12 top-full mt-2 w-72 sm:w-80 bg-stone-50 border border-stone-900 p-3 shadow-[6px_6px_0px_rgba(28,25,23,1)] z-40 animate-in fade-in zoom-in-95 duration-150">
                 <div className="flex items-center justify-between border-b border-stone-300 pb-2 mb-2 font-mono text-[10px] text-stone-500">
                   <span className="flex items-center gap-1 text-red-600 font-bold uppercase">
                     <Layers className="w-3 h-3" /> [ TYPOGRAPHY VAULT INDEX ]
@@ -1840,14 +1840,14 @@ export default function Home() {
                 <button
                   onClick={() => scrollCarousel("left")}
                   aria-label="Scroll left"
-                  className="p-2 border border-stone-800 bg-white hover:bg-red-600 hover:text-white transition-all shadow-[2px_2px_0px_rgba(28,25,23,1)] active:translate-x-[1px] active:translate-y-[1px]"
+                  className="p-2 border border-stone-800 bg-white hover:bg-red-600 hover:text-white hover:border-stone-900 transition-all duration-100 ease-out shadow-[3px_3px_0px_rgba(28,25,23,1)] hover:shadow-[1px_1px_0px_rgba(28,25,23,1)] hover:translate-x-[2px] hover:translate-y-[2px] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none cursor-pointer"
                 >
                   <ArrowLeft className="w-4 h-4" />
                 </button>
                 <button
                   onClick={() => scrollCarousel("right")}
                   aria-label="Scroll right"
-                  className="p-2 border border-stone-800 bg-white hover:bg-red-600 hover:text-white transition-all shadow-[2px_2px_0px_rgba(28,25,23,1)] active:translate-x-[1px] active:translate-y-[1px]"
+                  className="p-2 border border-stone-800 bg-white hover:bg-red-600 hover:text-white hover:border-stone-900 transition-all duration-100 ease-out shadow-[3px_3px_0px_rgba(28,25,23,1)] hover:shadow-[1px_1px_0px_rgba(28,25,23,1)] hover:translate-x-[2px] hover:translate-y-[2px] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none cursor-pointer"
                 >
                   <ArrowRight className="w-4 h-4" />
                 </button>
@@ -1998,23 +1998,26 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Quick Relays (Positioned directly beneath the map frame without bottom pushing) */}
+              {/* Quick Relays: Tactile mechanical button physics identical to top nav buttons */}
               <div className="mt-3 flex flex-wrap gap-1.5 font-mono text-[10px]">
                 <span className="text-stone-500 py-1 mr-1">QUICK RELAYS:</span>
-                {Object.entries(CARTOGRAPHIC_NODES).map(([key, node]) => (
-                  <button
-                    key={key}
-                    onClick={() => setHoveredRegionKey(key)}
-                    onMouseEnter={() => setHoveredRegionKey(key)}
-                    className={`px-2 py-1 border uppercase transition-all ${
-                      hoveredRegionKey === key
-                        ? "bg-red-600 text-white border-red-600 font-bold shadow-[2px_2px_0px_rgba(220,38,38,1)]"
-                        : "bg-stone-100 text-stone-700 border-stone-300 hover:border-stone-800"
-                    }`}
-                  >
-                    {node.name.split(" ")[0]}
-                  </button>
-                ))}
+                {Object.entries(CARTOGRAPHIC_NODES).map(([key, node]) => {
+                  const isCurrent = hoveredRegionKey === key;
+                  return (
+                    <button
+                      key={key}
+                      onClick={() => setHoveredRegionKey(key)}
+                      onMouseEnter={() => setHoveredRegionKey(key)}
+                      className={`px-2 py-1 border uppercase transition-all duration-100 ease-out cursor-pointer select-none ${
+                        isCurrent
+                          ? "bg-red-600 text-white border-stone-900 font-bold shadow-[1px_1px_0px_rgba(28,25,23,1)] translate-x-[2px] translate-y-[2px]"
+                          : "bg-stone-100 text-stone-700 border-stone-800 shadow-[3px_3px_0px_rgba(28,25,23,1)] hover:bg-stone-200 hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[1px_1px_0px_rgba(28,25,23,1)] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none"
+                      }`}
+                    >
+                      {node.name.split(" ")[0]}
+                    </button>
+                  );
+                })}
               </div>
             </div>
 
@@ -2076,11 +2079,11 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Action Button: Read Full Field Dossier */}
+              {/* Action Button: Read Full Field Dossier with Unified Mechanical Pressed Physics */}
               <div className="mt-4 pt-3 border-t border-stone-300">
                 <button
                   onClick={() => setDetailedMapNode(activeNodeData)}
-                  className="w-full py-2 px-3 font-mono text-xs uppercase tracking-wider bg-stone-900 text-white hover:bg-red-600 transition-colors shadow-[2px_2px_0px_rgba(220,38,38,1)] flex items-center justify-center gap-1.5 active:translate-x-[1px] active:translate-y-[1px]"
+                  className="w-full py-2 px-3 font-mono text-xs uppercase tracking-wider bg-stone-900 text-white hover:bg-red-600 border border-stone-900 transition-all duration-100 ease-out shadow-[3px_3px_0px_rgba(28,25,23,1)] hover:shadow-[1px_1px_0px_rgba(28,25,23,1)] hover:translate-x-[2px] hover:translate-y-[2px] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none flex items-center justify-center gap-1.5 cursor-pointer select-none"
                 >
                   <span>Read Full Field Dossier</span>
                   <ExternalLink className="w-3.5 h-3.5" />
@@ -2185,7 +2188,7 @@ export default function Home() {
                 />
                 <button
                   type="submit"
-                  className="px-3 py-1.5 font-mono text-xs uppercase tracking-wider bg-stone-900 text-white hover:bg-red-600 transition-colors shadow-[2px_2px_0px_rgba(220,38,38,1)]"
+                  className="px-3 py-1.5 font-mono text-xs uppercase tracking-wider bg-stone-900 text-white hover:bg-red-600 border border-stone-900 transition-all duration-100 ease-out shadow-[3px_3px_0px_rgba(28,25,23,1)] hover:shadow-[1px_1px_0px_rgba(28,25,23,1)] hover:translate-x-[2px] hover:translate-y-[2px] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none cursor-pointer"
                 >
                   Enroll [Send Mark]
                 </button>
@@ -2230,7 +2233,7 @@ export default function Home() {
           <div className="relative w-full max-w-4xl bg-stone-50 border-2 border-stone-900 p-4 sm:p-8 shadow-[12px_12px_0px_rgba(220,38,38,1)] max-h-[94vh] overflow-y-auto">
             <button
               onClick={() => setSelectedArtifact(null)}
-              className="absolute top-4 right-4 p-1.5 border border-stone-800 bg-white hover:bg-red-600 hover:text-white transition-colors z-10"
+              className="absolute top-4 right-4 p-1.5 border border-stone-800 bg-white hover:bg-red-600 hover:text-white transition-colors z-10 cursor-pointer"
             >
               <X className="w-5 h-5" />
             </button>
@@ -2258,20 +2261,20 @@ export default function Home() {
             <div className="flex gap-2 mb-6 border-b border-stone-300 pb-2">
               <button
                 onClick={() => setActiveModalTab("TIMELINE")}
-                className={`px-3 py-1.5 font-mono text-xs uppercase tracking-wider border transition-all ${
+                className={`px-3 py-1.5 font-mono text-xs uppercase tracking-wider border border-stone-800 transition-all duration-100 ease-out cursor-pointer select-none ${
                   activeModalTab === "TIMELINE"
-                    ? "bg-stone-900 text-white border-stone-900 font-bold shadow-[2px_2px_0px_rgba(220,38,38,1)]"
-                    : "bg-white text-stone-600 border-stone-300 hover:border-red-600 hover:text-red-600"
+                    ? "bg-stone-900 text-white font-bold shadow-[1px_1px_0px_rgba(28,25,23,1)] translate-x-[2px] translate-y-[2px]"
+                    : "bg-white text-stone-600 shadow-[3px_3px_0px_rgba(28,25,23,1)] hover:border-red-600 hover:text-red-600 hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[1px_1px_0px_rgba(28,25,23,1)] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none"
                 }`}
               >
                 [ Condition Telemetry &amp; Chrono-Slider ]
               </button>
               <button
                 onClick={() => setActiveModalTab("VERIFICATION")}
-                className={`px-3 py-1.5 font-mono text-xs uppercase tracking-wider border transition-all ${
+                className={`px-3 py-1.5 font-mono text-xs uppercase tracking-wider border border-stone-800 transition-all duration-100 ease-out cursor-pointer select-none ${
                   activeModalTab === "VERIFICATION"
-                    ? "bg-stone-900 text-white border-stone-900 font-bold shadow-[2px_2px_0px_rgba(220,38,38,1)]"
-                    : "bg-white text-stone-600 border-stone-300 hover:border-red-600 hover:text-red-600"
+                    ? "bg-stone-900 text-white font-bold shadow-[1px_1px_0px_rgba(28,25,23,1)] translate-x-[2px] translate-y-[2px]"
+                    : "bg-white text-stone-600 shadow-[3px_3px_0px_rgba(28,25,23,1)] hover:border-red-600 hover:text-red-600 hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[1px_1px_0px_rgba(28,25,23,1)] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none"
                 }`}
               >
                 [ Background &amp; Forensic Verification ]
@@ -2582,7 +2585,7 @@ export default function Home() {
             <div className="mt-6 pt-4 border-t-2 border-stone-800 flex justify-end">
               <button
                 onClick={() => setSelectedArtifact(null)}
-                className="px-4 py-2 font-mono text-xs uppercase tracking-wider bg-stone-900 text-white hover:bg-red-600 transition-colors shadow-[2px_2px_0px_rgba(220,38,38,1)]"
+                className="px-4 py-2 font-mono text-xs uppercase tracking-wider bg-stone-900 text-white hover:bg-red-600 border border-stone-900 transition-all duration-100 ease-out shadow-[3px_3px_0px_rgba(28,25,23,1)] hover:shadow-[1px_1px_0px_rgba(28,25,23,1)] hover:translate-x-[2px] hover:translate-y-[2px] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none cursor-pointer"
               >
                 Close Specimen Dossier [ESC]
               </button>
@@ -2597,7 +2600,7 @@ export default function Home() {
           <div className="relative w-full max-w-3xl bg-stone-50 border-2 border-stone-900 p-5 sm:p-8 shadow-[12px_12px_0px_rgba(220,38,38,1)] max-h-[92vh] overflow-y-auto">
             <button
               onClick={() => setDetailedMapNode(null)}
-              className="absolute top-4 right-4 p-1.5 border border-stone-800 bg-white hover:bg-red-600 hover:text-white transition-colors z-10"
+              className="absolute top-4 right-4 p-1.5 border border-stone-800 bg-white hover:bg-red-600 hover:text-white transition-colors z-10 cursor-pointer"
             >
               <X className="w-5 h-5" />
             </button>
@@ -2676,7 +2679,7 @@ export default function Home() {
             <div className="mt-6 pt-4 border-t-2 border-stone-800 flex justify-end">
               <button
                 onClick={() => setDetailedMapNode(null)}
-                className="px-4 py-2 font-mono text-xs uppercase tracking-wider bg-stone-900 text-white hover:bg-red-600 transition-colors shadow-[2px_2px_0px_rgba(220,38,38,1)]"
+                className="px-4 py-2 font-mono text-xs uppercase tracking-wider bg-stone-900 text-white hover:bg-red-600 border border-stone-900 transition-all duration-100 ease-out shadow-[3px_3px_0px_rgba(28,25,23,1)] hover:shadow-[1px_1px_0px_rgba(28,25,23,1)] hover:translate-x-[2px] hover:translate-y-[2px] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none cursor-pointer"
               >
                 Close Field Dossier [ESC]
               </button>
@@ -2702,7 +2705,7 @@ export default function Home() {
                 onClick={() =>
                   setConfirmDialog({ isOpen: false, type: "REVOKE_ITEM", title: "", message: "" })
                 }
-                className="p-1 border border-stone-800 bg-white hover:bg-red-600 hover:text-white transition-colors"
+                className="p-1 border border-stone-800 bg-white hover:bg-red-600 hover:text-white transition-colors cursor-pointer"
               >
                 <X className="w-4 h-4" />
               </button>
@@ -2733,14 +2736,14 @@ export default function Home() {
                 onClick={() =>
                   setConfirmDialog({ isOpen: false, type: "REVOKE_ITEM", title: "", message: "" })
                 }
-                className="px-4 py-2 font-mono text-xs uppercase tracking-wider border border-stone-800 bg-white text-stone-800 hover:bg-stone-200 transition-colors shadow-[2px_2px_0px_rgba(28,25,23,1)] active:translate-x-[1px] active:translate-y-[1px]"
+                className="px-4 py-2 font-mono text-xs uppercase tracking-wider border border-stone-800 bg-white text-stone-800 hover:bg-stone-200 transition-all duration-100 ease-out shadow-[3px_3px_0px_rgba(28,25,23,1)] hover:shadow-[1px_1px_0px_rgba(28,25,23,1)] hover:translate-x-[2px] hover:translate-y-[2px] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none cursor-pointer"
               >
                 [Cancel]
               </button>
               <button
                 type="button"
                 onClick={handleExecuteConfirmedAction}
-                className="px-4 py-2 font-mono text-xs uppercase tracking-wider border border-stone-900 bg-stone-900 text-white hover:bg-red-600 hover:border-red-600 transition-colors shadow-[2px_2px_0px_rgba(220,38,38,1)] font-bold active:translate-x-[1px] active:translate-y-[1px]"
+                className="px-4 py-2 font-mono text-xs uppercase tracking-wider border border-stone-900 bg-stone-900 text-white hover:bg-red-600 hover:border-red-600 transition-all duration-100 ease-out shadow-[3px_3px_0px_rgba(28,25,23,1)] hover:shadow-[1px_1px_0px_rgba(28,25,23,1)] hover:translate-x-[2px] hover:translate-y-[2px] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none font-bold cursor-pointer"
               >
                 {confirmDialog.type === "REVOKE_ITEM"
                   ? "[Confirm Expunge]"
@@ -2767,7 +2770,7 @@ export default function Home() {
                 </div>
                 <button
                   onClick={() => setIsSubmitOpen(false)}
-                  className="p-1 border border-stone-800 bg-white hover:bg-red-600 hover:text-white transition-colors"
+                  className="p-1 border border-stone-800 bg-white hover:bg-red-600 hover:text-white transition-colors cursor-pointer"
                 >
                   <X className="w-5 h-5" />
                 </button>
@@ -2872,7 +2875,7 @@ export default function Home() {
                           setNewImage("");
                           if (fileInputRef.current) fileInputRef.current.value = "";
                         }}
-                        className="text-[10px] font-mono text-red-600 hover:underline uppercase"
+                        className="text-[10px] font-mono text-red-600 hover:underline uppercase cursor-pointer"
                       >
                         [Clear ×]
                       </button>
@@ -2930,9 +2933,10 @@ export default function Home() {
                   </div>
                 </div>
 
+                {/* Submit button with clean integer shadow & mechanical press (No artifact line) */}
                 <button
                   type="submit"
-                  className="w-full py-2.5 font-mono text-xs uppercase tracking-wider bg-red-600 text-white hover:bg-stone-900 transition-colors shadow-[4px_4px_0px_rgba(28,25,23,1)] active:translate-x-[1px] active:translate-y-[1px]"
+                  className="w-full py-2.5 font-mono text-xs uppercase tracking-wider bg-red-600 text-white hover:bg-stone-900 border border-stone-900 transition-all duration-100 ease-out shadow-[3px_3px_0px_rgba(28,25,23,1)] hover:shadow-[1px_1px_0px_rgba(28,25,23,1)] hover:translate-x-[2px] hover:translate-y-[2px] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none cursor-pointer"
                 >
                   Affix Stamp &amp; Dispatch Record
                 </button>
