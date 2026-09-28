@@ -28,6 +28,7 @@ import {
   AlertTriangle,
   ChevronDown,
   Layers,
+  Image as ImageIcon,
 } from "lucide-react";
 
 interface Dispatch {
@@ -121,8 +122,7 @@ const CARTOGRAPHIC_NODES: Record<string, CartographicNode> = {
     materialScience:
       "Balaena mysticetus (Bowhead Whale) bone collagen hardened in anaerobic permafrost; turf sods and dry-laid sedimentary limestone flagstones.",
     endangermentStatus: "Critical // Coastal permafrost erosion and wave storm surging",
-    image:
-      "/thu.jpg",
+    image: "/thu.jpg",
     activeSurveys: 17,
   },
   greenland: {
@@ -143,8 +143,7 @@ const CARTOGRAPHIC_NODES: Record<string, CartographicNode> = {
     materialScience:
       "Feldspathic granite, syenite, and biotite gneiss blocks bound with glacial clay; insulated with dense Carex peat turf blocks.",
     endangermentStatus: "High // Freeze-thaw spalling, sub-polar wind ablation and ground slump",
-    image:
-      "/grl.jpg",
+    image: "/grl.jpg",
     activeSurveys: 23,
   },
   dene: {
@@ -165,8 +164,7 @@ const CARTOGRAPHIC_NODES: Record<string, CartographicNode> = {
     materialScience:
       "Picea mariana (Black Spruce) compression wood, Betula papyrifera (Paper Birch) bark containing natural betulin moisture repellents.",
     endangermentStatus: "Stable // Traditional harvesting lineages maintained by elders",
-    image:
-      "/den.jpg",
+    image: "/den.jpg",
     activeSurveys: 14,
   },
   inupiat: {
@@ -187,8 +185,7 @@ const CARTOGRAPHIC_NODES: Record<string, CartographicNode> = {
     materialScience:
       "Ocean-seasoned driftwood larch and spruce; thick tundra sod blocks and bearded seal skin (ugruk) membrane vapor seals.",
     endangermentStatus: "Critical // Coastal bluff thaw subsidence and arctic storm storm-surge erosion",
-    image:
-      "/inu.jpg",
+    image: "/inu.jpg",
     activeSurveys: 16,
   },
 
@@ -211,8 +208,7 @@ const CARTOGRAPHIC_NODES: Record<string, CartographicNode> = {
     materialScience:
       "Larix sibirica (Siberian Larch) exhibiting dense growth rings with natural water-insoluble arabinogalactans, naturally preserved in sub-surface permafrost.",
     endangermentStatus: "Critical // Climate permafrost thaw & glacial lens melting",
-    image:
-      "alt.jpg",
+    image: "/alt.jpg",
     activeSurveys: 22,
   },
   siberia: {
@@ -233,8 +229,7 @@ const CARTOGRAPHIC_NODES: Record<string, CartographicNode> = {
     materialScience:
       "Slow-growth Pinus sylvestris and Siberian larch harvested in dead-winter dormancy to minimize sap content and prevent frost-splitting at -50°C.",
     endangermentStatus: "High // Structural wood rot, seasonal forest fires & urban redevelopment",
-    image:
-      "/sib.jpg",
+    image: "/sib.jpg",
     activeSurveys: 18,
   },
   yakut: {
@@ -255,8 +250,7 @@ const CARTOGRAPHIC_NODES: Record<string, CartographicNode> = {
     materialScience:
       "Siberian larch logs barked and sun-dried; insulated with dried sphagnum moss and organic clay/dung biocement rendering.",
     endangermentStatus: "Vulnerable // Permafrost subsidence (thermokarst) undermining timber pilings",
-    image:
-      "/yak.jpg",
+    image: "/yak.jpg",
     activeSurveys: 15,
   },
 
@@ -1224,6 +1218,8 @@ export default function Home() {
   const [newRole, setNewRole] = useState("");
   const [newExcerpt, setNewExcerpt] = useState("");
   const [newTag, setNewTag] = useState("Architecture");
+  const [newImage, setNewImage] = useState("");
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   const [newsletterEmail, setNewsletterEmail] = useState("");
   const [newsletterEnrolled, setNewsletterEnrolled] = useState(false);
@@ -1353,9 +1349,51 @@ export default function Home() {
     setActiveMilestoneIndex(0);
   };
 
+  // Compressed Image Handler to Prevent Storage Quota Error
+  const handleImageFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = (event) => {
+        const img = new Image();
+        img.onload = () => {
+          const canvas = document.createElement("canvas");
+          const maxDim = 800; // Constrain max dimension to 800px for crisp display under 50KB
+          let width = img.width;
+          let height = img.height;
+          if (width > height) {
+            if (width > maxDim) {
+              height = Math.round((height * maxDim) / width);
+              width = maxDim;
+            }
+          } else {
+            if (height > maxDim) {
+              width = Math.round((width * maxDim) / height);
+              height = maxDim;
+            }
+          }
+          canvas.width = width;
+          canvas.height = height;
+          const ctx = canvas.getContext("2d");
+          if (ctx) {
+            ctx.drawImage(img, 0, 0, width, height);
+            const compressed = canvas.toDataURL("image/jpeg", 0.72);
+            setNewImage(compressed);
+          }
+        };
+        img.src = event.target?.result as string;
+      };
+      reader.readAsDataURL(file);
+    }
+  };
+
   const handleCreateDispatch = (e: React.FormEvent) => {
     e.preventDefault();
     if (!newLocation || !newContributor) return;
+
+    const finalImage =
+      newImage.trim() ||
+      "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=900&q=80";
 
     const newEntry: Dispatch = {
       id: `DSP-0${dispatches.length + 1}`,
@@ -1367,8 +1405,7 @@ export default function Home() {
       excerpt:
         newExcerpt ||
         "Newly submitted field testimony pending corroboration.",
-      image:
-        "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=900&q=80",
+      image: finalImage,
       tags: [newTag, "Field Submission"],
     };
 
@@ -1388,7 +1425,7 @@ export default function Home() {
     try {
       localStorage.setItem("vernacular_guild_dispatches", JSON.stringify(nextList));
     } catch (err) {
-      console.error("Storage error:", err);
+      console.warn("Storage quota limit reached; dispatch preserved in active session.", err);
     }
 
     setIsSubmitOpen(false);
@@ -1397,6 +1434,8 @@ export default function Home() {
     setNewContributor("");
     setNewRole("");
     setNewExcerpt("");
+    setNewImage("");
+    if (fileInputRef.current) fileInputRef.current.value = "";
   };
 
   const handleNewsletterSubmit = (e: React.FormEvent) => {
@@ -1518,7 +1557,7 @@ export default function Home() {
           ref={filterRibbonRef}
           className="relative py-4 flex flex-wrap gap-4 sm:gap-8 justify-center font-mono text-xs text-stone-600 border-b border-stone-200"
         >
-          {/* 1. FOLKLORISTS & TERRACOTTA (WITH INTERACTIVE '+' DROPDOWN) */}
+          {/* 1. FOLKLORISTS & TERRACOTTA */}
           <div className="relative">
             <button
               onClick={() =>
@@ -1597,7 +1636,7 @@ export default function Home() {
             * Stone Masons &amp; Carvings
           </button>
 
-          {/* 3. TYPE COLLECTORS & PRESS (WITH INTERACTIVE '+' DROPDOWN) */}
+          {/* 3. TYPE COLLECTORS & PRESS */}
           <div className="relative">
             <button
               onClick={() =>
@@ -1888,8 +1927,8 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 border-2 border-stone-800 bg-white p-4 sm:p-6 shadow-[6px_6px_0px_rgba(28,25,23,1)]">
-            {/* Left 8 Columns: World Map Loaded from public/worldmap.png */}
-            <div className="lg:col-span-8 flex flex-col justify-between">
+            {/* Left 8 Columns: World Map and Quick Relays (Grouped directly beneath map frame) */}
+            <div className="lg:col-span-8 flex flex-col justify-start">
               <div className="relative w-full aspect-[2/1] border border-stone-400 bg-[#fbfbf9] overflow-hidden select-none">
                 <img
                   src="/worldmap.png"
@@ -1959,6 +1998,7 @@ export default function Home() {
                 </div>
               </div>
 
+              {/* Quick Relays (Positioned directly beneath the map frame without bottom pushing) */}
               <div className="mt-3 flex flex-wrap gap-1.5 font-mono text-[10px]">
                 <span className="text-stone-500 py-1 mr-1">QUICK RELAYS:</span>
                 {Object.entries(CARTOGRAPHIC_NODES).map(([key, node]) => (
@@ -2711,7 +2751,7 @@ export default function Home() {
         </div>
       )}
 
-      {/* Submission Drawer */}
+      {/* Submission Drawer with Image Upload Support */}
       {isSubmitOpen && (
         <div className="fixed inset-0 z-50 bg-stone-950/70 backdrop-blur-sm flex justify-end">
           <div className="w-full max-w-md bg-stone-50 border-l-2 border-stone-900 h-full p-6 sm:p-8 flex flex-col justify-between overflow-y-auto shadow-2xl">
@@ -2818,11 +2858,76 @@ export default function Home() {
                   />
                 </div>
 
-                <div className="p-4 border border-dashed border-stone-400 bg-stone-100 flex flex-col items-center justify-center text-center">
-                  <UploadCloud className="w-6 h-6 text-stone-500 mb-1" />
-                  <span className="font-mono text-xs text-stone-600">
-                    High-res photograph auto-assigned from field feed
-                  </span>
+                {/* ARCHIVAL EVIDENCE IMAGE ATTACHMENT WITH COMPRESSION */}
+                <div className="border border-stone-300 bg-white p-3 space-y-2">
+                  <div className="flex justify-between items-center">
+                    <label className="font-mono text-xs text-stone-700 font-bold uppercase flex items-center gap-1.5">
+                      <ImageIcon className="w-3.5 h-3.5 text-red-600" />
+                      Visual Photographic Plate
+                    </label>
+                    {newImage && (
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setNewImage("");
+                          if (fileInputRef.current) fileInputRef.current.value = "";
+                        }}
+                        className="text-[10px] font-mono text-red-600 hover:underline uppercase"
+                      >
+                        [Clear ×]
+                      </button>
+                    )}
+                  </div>
+
+                  {/* Hidden Native File Input */}
+                  <input
+                    ref={fileInputRef}
+                    type="file"
+                    accept="image/*"
+                    onChange={handleImageFileChange}
+                    className="hidden"
+                  />
+
+                  {/* Clickable Drag & Drop / Upload Area */}
+                  {!newImage ? (
+                    <div
+                      onClick={() => fileInputRef.current?.click()}
+                      className="border-2 border-dashed border-stone-400 bg-stone-50 hover:bg-stone-100 hover:border-red-600 cursor-pointer p-4 text-center transition-colors group"
+                    >
+                      <UploadCloud className="w-6 h-6 text-stone-400 group-hover:text-red-600 mx-auto mb-1 transition-colors" />
+                      <span className="font-mono text-[11px] text-stone-700 font-bold block uppercase">
+                        Select Image From Device
+                      </span>
+                      <span className="font-mono text-[10px] text-stone-400 block mt-0.5">
+                        Auto-compressed into lightweight archival storage
+                      </span>
+                    </div>
+                  ) : (
+                    <div className="relative aspect-video border border-stone-300 bg-stone-100 overflow-hidden group">
+                      <img
+                        src={newImage}
+                        alt="Evidence Preview"
+                        className="w-full h-full object-cover"
+                      />
+                      <div className="absolute top-1.5 left-1.5 bg-stone-900/90 text-white font-mono text-[9px] px-1.5 py-0.5 uppercase tracking-wider">
+                        SURFACED PLATE PREVIEW
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Optional Direct URL input */}
+                  <div className="pt-1">
+                    <span className="block font-mono text-[10px] text-stone-400 uppercase mb-1">
+                      Or Paste Image Web URL:
+                    </span>
+                    <input
+                      type="url"
+                      value={newImage.startsWith("data:") ? "" : newImage}
+                      onChange={(e) => setNewImage(e.target.value)}
+                      placeholder="https://example.com/specimen.jpg"
+                      className="w-full px-2.5 py-1 text-xs font-mono border border-stone-300 bg-stone-50 focus:outline-none focus:border-red-600"
+                    />
+                  </div>
                 </div>
 
                 <button
