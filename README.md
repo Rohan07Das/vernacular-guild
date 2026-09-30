@@ -15,7 +15,7 @@ The project pairs interactive cartographic spatial nodes with forensic artifact 
 ## 🧭 Key Architectural Modules
 
 ### 1. Global Cartographic Field Observatory (World Atlas)
-* **Calibrated Projection Map**: Custom interactive projection overlay featuring 12 monitored architectural cradles across civilizational corridors:
+* **Calibrated Projection Map**: Custom interactive projection overlay featuring 19 monitored architectural cradles with precise spatial telemetry:
   * **Eastern Indian Deula Tradition** (Kalinga & Utkal Basin)
   * **Kigumi Woodcraft Guilds** (Kyoto & Nara Corridors)
   * **Sumerian & Babylonian Mudbrick Guilds** (Mesopotamian Alluvium)
@@ -28,7 +28,15 @@ The project pairs interactive cartographic spatial nodes with forensic artifact 
   * **Safavid Muqarnas & Double-Dome Architects** (Isfahan Oasis)
   * **Classic Maya Limestone Masonry** (Petén & Yucatán Lowlands)
   * **Gokomere & Shona Dry-Stone Builders** (Great Zimbabwe Plateau)
+  * **Thule & Classic Inuit Whalebone Builders** (Somerset Island & High Arctic Archipelago)
+  * **Greenland Norse Settler Guilds** (Hvalsey & Tunulliarfik Fjord)
+  * **Northern Dene & Athabaskan Guilds** (Dehcho & Mackenzie River Basin)
+  * **Iñupiat Marine Arctic Builders** (Point Barrow & Utqiaġvik Coastal Plain)
+  * **Pazyryk & Scythian Nomadic Guilds** (Altai & Ukok Permafrost Basin)
+  * **Siberian Ostrog Frontier Carpenter Guilds** (Yenisei Basin & Central Taiga)
+  * **Yakut (Sakha) Earth & Wood Craftsmen** (Lena Basin & Sakha Plain)
 * **Sonar Pulsing & Telemetry HUD**: Live coordinate locator, decay threat indices, material science profiles, and deep architectural dossiers.
+* **Direct-Action Quick Relays**: Responsive regional switcher positioned directly beneath the map projection viewport for swift cradle navigation without layout displacement.
 * **Archival Chromatic Reveal**: High-contrast monochrome filters at rest that transition into authentic full-color inspection on user interaction and modal surfacing.
 
 ### 2. Archival Specimen Repository (Forensic Artifact Index)
@@ -45,9 +53,11 @@ The project pairs interactive cartographic spatial nodes with forensic artifact 
 * **Forensic Assay Registry**: Cryptographic verification hashes, material spectroscopy, petrographic profiles, and documented institutional chain-of-custody.
 
 ### 3. Field Evidence Intake & Archive Management
+* **In-Browser Client Compression**: High-resolution photographic plate upload equipped with offscreen canvas downscaling (constrained to 800px, 72% JPEG quality), preserving visual acuity under 50KB to permanently prevent browser `QuotaExceededError`.
+* **Flexible Visual Input**: Dual-mode input allowing observers to upload local files directly from devices or link remote image URLs with instant live preview.
 * **Decentralized Dispatch Registration**: Submit new architectural field observations with categorization tags, region tagging, observer credentials, and photographic documentation.
-* **Granular Revocation**: Quick individual dispatch revocation (`[Revoke]`) with confirmation gates.
-* **Archive Recycle System**: One-click archive purge and re-synchronization (`[Recycle ⟲]`) restoring the database to its pristine curated edition.
+* **Custom Brutalist Confirmation Engine**: Modal-driven confirmation barriers replacing native browser alerts for destructive actions (`[Revoke]` item expunge & `[Recycle]` ledger purging).
+* **Tactile Mechanical UI Physics**: Hard 1px borders with zero-gap multi-layered drop shadows (`1px 1px 0px #1c1917, 2px 2px 0px #1c1917, 3px 3px 0px #1c1917`) paired with `bg-clip-padding` to eliminate sub-pixel anti-aliasing white seam lines while delivering weighted press feedback on hover and click.
 * **Local Persistence**: Client-side `localStorage` caching ensuring user-submitted dispatches and community endorsements persist across browser reloads.
 * **Dynamic Tag Taxonomy & Submenu Filters**: Multi-tiered filter dropdowns with nested reading options for specific architectural traditions.
 
@@ -59,10 +69,10 @@ The project pairs interactive cartographic spatial nodes with forensic artifact 
 * **Language**: [TypeScript](https://www.typescriptlang.org/)
 * **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 * **Icons**: [Lucide React](https://lucide.dev/)
+* **Image Processing**: Client-side HTML5 Canvas API (In-browser compression & resampling)
 * **State & Persistence**: React Hooks (`useState`, `useEffect`, `useRef`) + Browser `localStorage`
 * **Data Visualization**: Native responsive SVG curves & coordinate math
 
 ---
+
 <p>&copy; 2026 | 🔍Researched and Designed by Rohan Lal Das</p>
-
-
