@@ -2938,7 +2938,7 @@ export default function Home() {
                   type="submit"
                   className="w-full py-2.5 font-mono text-xs uppercase tracking-wider bg-red-600 text-white hover:bg-stone-900 border border-stone-900 transition-all duration-100 ease-out shadow-[3px_3px_0px_rgba(28,25,23,1)] hover:shadow-[1px_1px_0px_rgba(28,25,23,1)] hover:translate-x-[2px] hover:translate-y-[2px] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none cursor-pointer"
                 >
-                  Affix Stamp &amp; Dispatch Record
+                  Affix Stamp &amp; Dispatch Records
                 </button>
               </form>
             </div>
