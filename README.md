@@ -63,7 +63,7 @@ The project pairs interactive cartographic spatial nodes with forensic artifact 
 
 ---
 
-## 🛠 Tech Stacks
+## 🛠 Tech Stack
 
 * **Framework**: [Next.js](https://nextjs.org/) (App Router, Client Components)
 * **Language**: [TypeScript](https://www.typescriptlang.org/)
