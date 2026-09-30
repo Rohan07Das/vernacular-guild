@@ -1,4 +1,4 @@
-# The VERNACULAR Guild⏳ 
+# The VERNACULAR Guild⏳
 
 > A decentralized civic field observatory and open archival ledger cataloging vernacular stonework, traditional joinery systems, typographic fragments, and oral architectural heritage.
 
